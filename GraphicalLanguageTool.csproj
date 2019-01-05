@@ -72,6 +72,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About.Designer.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs" />
     <Compile Include="OpenBug.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +107,8 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="About.resx" />
+    <EmbeddedResource Include="Form1.resx" />
     <EmbeddedResource Include="NewBugForm.resx">
       <DependentUpon>NewBugForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -177,6 +187,7 @@
   <ItemGroup>
     <Content Include="bugicon_MBz_icon.ico" />
     <Content Include="c#logo.ico" />
+    <Content Include="Resources\pencil.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

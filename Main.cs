@@ -4,6 +4,7 @@ using System.Windows.Forms;
 using System.IO;
 using ICSharpCode.TextEditor.Document;
 using GraphicalLanguageTool;
+using GraphicalLanguageTool;
 
 namespace GraphicalLanguageTool
 {
@@ -368,5 +369,30 @@ namespace GraphicalLanguageTool
         {
 
         }
+
+        private void buttonselectionif_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("An if statement, in C#, is a programming construct in C# used to selectively execute code statements based on the result of evaluating a Boolean expression. The Boolean expression must return either a true or false value. The if statement is used as a control statement to branch to different sections of code depending on the result of the Boolean conditional expression. The expression is stated within parentheses and evaluated during execution. If the expression results in a true value, the code following the if statement is executed. Otherwise, the code following an optional else statement is executed. If there is no else statement, execution continues with the code after the if block.","Selection - If Statement");
+        }
+
+
+
+        private void buttonselectionelse_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("An if statement, in C#, is a programming construct in C# used to selectively execute code statements based on the result of evaluating a Boolean expression. The Boolean expression must return either a true or false value. The if statement is used as a control statement to branch to different sections of code depending on the result of the Boolean conditional expression. The expression is stated within parentheses and evaluated during execution. If the expression results in a true value, the code following the if statement is executed. Otherwise, the code following an optional else statement is executed. If there is no else statement, execution continues with the code after the if block.", "Selection - If Statement");
+        }
+
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+       
+            Form1 paint = new Form1();
+            paint.Show(); // or somename.ShowDialog(); if you want the new form to have priority until it is closed
+}
     }
 }

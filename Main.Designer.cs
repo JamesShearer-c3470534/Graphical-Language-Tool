@@ -43,41 +43,9 @@
             this.logoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.STS3 = new System.Windows.Forms.ToolStripSeparator();
             this.EXIT = new System.Windows.Forms.ToolStripMenuItem();
-            this.HELP = new System.Windows.Forms.ToolStripMenuItem();
-            this.ABOUT = new System.Windows.Forms.ToolStripMenuItem();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.LF = new System.Windows.Forms.TextBox();
-            this.BF = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.TTF = new System.Windows.Forms.ToolTip(this.components);
-            this.LNSTXT = new System.Windows.Forms.TextBox();
-            this.LNETXT = new System.Windows.Forms.TextBox();
-            this.METHODTXT = new System.Windows.Forms.TextBox();
-            this.CLASSTXT = new System.Windows.Forms.TextBox();
-            this.CAUSETXT = new System.Windows.Forms.TextBox();
-            this.SYMPTOMTXT = new System.Windows.Forms.TextBox();
-            this.BUGIDTXT = new System.Windows.Forms.TextBox();
-            this.APPTXT = new System.Windows.Forms.TextBox();
-            this.LH1 = new System.Windows.Forms.Label();
-            this.LBEND = new System.Windows.Forms.Label();
-            this.LBSTART = new System.Windows.Forms.Label();
-            this.LBLT = new System.Windows.Forms.Label();
-            this.LBMETHOD = new System.Windows.Forms.Label();
-            this.LBCLASS = new System.Windows.Forms.Label();
-            this.LBCAUSE = new System.Windows.Forms.Label();
-            this.BUGID = new System.Windows.Forms.Label();
-            this.LBAPP = new System.Windows.Forms.Label();
-            this.LBLANG = new System.Windows.Forms.Label();
-            this.LBSYMPTOM = new System.Windows.Forms.Label();
-            this.TXTLANG = new System.Windows.Forms.TextBox();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.LBINPUT = new System.Windows.Forms.ListBox();
             this.Iteration = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.buttonselectionif = new System.Windows.Forms.ToolStripMenuItem();
+            this.buttonselectionelse = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
@@ -87,10 +55,56 @@
             this.toolStripMenuItem9 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem10 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem11 = new System.Windows.Forms.ToolStripMenuItem();
+            this.HELP = new System.Windows.Forms.ToolStripMenuItem();
+            this.ABOUT = new System.Windows.Forms.ToolStripMenuItem();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.LBINPUT = new System.Windows.Forms.ListBox();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.SYMPTOMTXT = new System.Windows.Forms.TextBox();
+            this.CAUSETXT = new System.Windows.Forms.TextBox();
+            this.TXTLANG = new System.Windows.Forms.TextBox();
+            this.METHODTXT = new System.Windows.Forms.TextBox();
+            this.CLASSTXT = new System.Windows.Forms.TextBox();
+            this.LNETXT = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.LNSTXT = new System.Windows.Forms.TextBox();
+            this.APPTXT = new System.Windows.Forms.TextBox();
+            this.LH1 = new System.Windows.Forms.Label();
+            this.LBLANG = new System.Windows.Forms.Label();
+            this.BUGIDTXT = new System.Windows.Forms.TextBox();
+            this.LBEND = new System.Windows.Forms.Label();
+            this.LBLT = new System.Windows.Forms.Label();
+            this.LBSTART = new System.Windows.Forms.Label();
+            this.BUGID = new System.Windows.Forms.Label();
+            this.LBCAUSE = new System.Windows.Forms.Label();
+            this.LBAPP = new System.Windows.Forms.Label();
+            this.LBSYMPTOM = new System.Windows.Forms.Label();
+            this.LBMETHOD = new System.Windows.Forms.Label();
+            this.LBCLASS = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.selectionifpanel = new System.Windows.Forms.Panel();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.selectionelsepanel = new System.Windows.Forms.Panel();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.LF = new System.Windows.Forms.TextBox();
+            this.BF = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.TTF = new System.Windows.Forms.ToolTip(this.components);
+            this.button1 = new System.Windows.Forms.Button();
             this.MS1.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.selectionifpanel.SuspendLayout();
+            this.selectionelsepanel.SuspendLayout();
+            this.panel5.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // USERNAMETXT
@@ -133,10 +147,10 @@
             // 
             this.MS1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.FILE,
-            this.HELP,
             this.Iteration,
             this.toolStripMenuItem7,
-            this.toolStripMenuItem11});
+            this.toolStripMenuItem11,
+            this.HELP});
             this.MS1.Location = new System.Drawing.Point(0, 0);
             this.MS1.Name = "MS1";
             this.MS1.Size = new System.Drawing.Size(1321, 24);
@@ -214,6 +228,91 @@
             this.EXIT.Text = "Exit";
             this.EXIT.Click += new System.EventHandler(this.ExitToolStripMenuItem_Click);
             // 
+            // Iteration
+            // 
+            this.Iteration.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.buttonselectionif,
+            this.buttonselectionelse,
+            this.toolStripMenuItem4,
+            this.toolStripMenuItem5,
+            this.toolStripMenuItem6});
+            this.Iteration.Name = "Iteration";
+            this.Iteration.Size = new System.Drawing.Size(67, 20);
+            this.Iteration.Text = "Selection";
+            // 
+            // buttonselectionif
+            // 
+            this.buttonselectionif.Name = "buttonselectionif";
+            this.buttonselectionif.Size = new System.Drawing.Size(112, 22);
+            this.buttonselectionif.Text = "If";
+            this.buttonselectionif.Click += new System.EventHandler(this.buttonselectionif_Click);
+            // 
+            // buttonselectionelse
+            // 
+            this.buttonselectionelse.Name = "buttonselectionelse";
+            this.buttonselectionelse.Size = new System.Drawing.Size(112, 22);
+            this.buttonselectionelse.Text = "Else";
+            this.buttonselectionelse.Click += new System.EventHandler(this.buttonselectionelse_Click);
+            // 
+            // toolStripMenuItem4
+            // 
+            this.toolStripMenuItem4.Name = "toolStripMenuItem4";
+            this.toolStripMenuItem4.Size = new System.Drawing.Size(112, 22);
+            this.toolStripMenuItem4.Text = "Switch";
+            // 
+            // toolStripMenuItem5
+            // 
+            this.toolStripMenuItem5.Name = "toolStripMenuItem5";
+            this.toolStripMenuItem5.Size = new System.Drawing.Size(112, 22);
+            this.toolStripMenuItem5.Text = "Case";
+            // 
+            // toolStripMenuItem6
+            // 
+            this.toolStripMenuItem6.Name = "toolStripMenuItem6";
+            this.toolStripMenuItem6.Size = new System.Drawing.Size(112, 22);
+            this.toolStripMenuItem6.Text = "Default";
+            // 
+            // toolStripMenuItem7
+            // 
+            this.toolStripMenuItem7.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem1,
+            this.toolStripMenuItem8,
+            this.toolStripMenuItem9,
+            this.toolStripMenuItem10});
+            this.toolStripMenuItem7.Name = "toolStripMenuItem7";
+            this.toolStripMenuItem7.Size = new System.Drawing.Size(63, 20);
+            this.toolStripMenuItem7.Text = "Iteration";
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(130, 22);
+            this.toolStripMenuItem1.Text = "Do";
+            // 
+            // toolStripMenuItem8
+            // 
+            this.toolStripMenuItem8.Name = "toolStripMenuItem8";
+            this.toolStripMenuItem8.Size = new System.Drawing.Size(130, 22);
+            this.toolStripMenuItem8.Text = "For";
+            // 
+            // toolStripMenuItem9
+            // 
+            this.toolStripMenuItem9.Name = "toolStripMenuItem9";
+            this.toolStripMenuItem9.Size = new System.Drawing.Size(130, 22);
+            this.toolStripMenuItem9.Text = "foreach, in";
+            // 
+            // toolStripMenuItem10
+            // 
+            this.toolStripMenuItem10.Name = "toolStripMenuItem10";
+            this.toolStripMenuItem10.Size = new System.Drawing.Size(130, 22);
+            this.toolStripMenuItem10.Text = "While";
+            // 
+            // toolStripMenuItem11
+            // 
+            this.toolStripMenuItem11.Name = "toolStripMenuItem11";
+            this.toolStripMenuItem11.Size = new System.Drawing.Size(70, 20);
+            this.toolStripMenuItem11.Text = "Sequence";
+            // 
             // HELP
             // 
             this.HELP.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -234,26 +333,6 @@
             this.panel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.panel1.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.panel1.Controls.Add(this.LBINPUT);
-            this.panel1.Controls.Add(this.TXTLANG);
-            this.panel1.Controls.Add(this.LBLANG);
-            this.panel1.Controls.Add(this.LH1);
-            this.panel1.Controls.Add(this.APPTXT);
-            this.panel1.Controls.Add(this.LBLT);
-            this.panel1.Controls.Add(this.BUGIDTXT);
-            this.panel1.Controls.Add(this.LBCAUSE);
-            this.panel1.Controls.Add(this.BUGID);
-            this.panel1.Controls.Add(this.LBSYMPTOM);
-            this.panel1.Controls.Add(this.LBAPP);
-            this.panel1.Controls.Add(this.LBEND);
-            this.panel1.Controls.Add(this.SYMPTOMTXT);
-            this.panel1.Controls.Add(this.LBSTART);
-            this.panel1.Controls.Add(this.CAUSETXT);
-            this.panel1.Controls.Add(this.LBMETHOD);
-            this.panel1.Controls.Add(this.CLASSTXT);
-            this.panel1.Controls.Add(this.LBCLASS);
-            this.panel1.Controls.Add(this.METHODTXT);
-            this.panel1.Controls.Add(this.LNETXT);
-            this.panel1.Controls.Add(this.LNSTXT);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
@@ -263,6 +342,375 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1148, 303);
             this.panel1.TabIndex = 27;
+            // 
+            // LBINPUT
+            // 
+            this.LBINPUT.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.LBINPUT.BackColor = System.Drawing.SystemColors.Window;
+            this.LBINPUT.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.LBINPUT.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBINPUT.FormattingEnabled = true;
+            this.LBINPUT.ItemHeight = 15;
+            this.LBINPUT.Location = new System.Drawing.Point(666, 33);
+            this.LBINPUT.Margin = new System.Windows.Forms.Padding(0);
+            this.LBINPUT.MaximumSize = new System.Drawing.Size(485, 242);
+            this.LBINPUT.MinimumSize = new System.Drawing.Size(300, 210);
+            this.LBINPUT.Name = "LBINPUT";
+            this.LBINPUT.ScrollAlwaysVisible = true;
+            this.LBINPUT.Size = new System.Drawing.Size(466, 242);
+            this.LBINPUT.TabIndex = 1;
+            this.LBINPUT.Tag = "";
+            this.LBINPUT.SelectedIndexChanged += new System.EventHandler(this.ListBoxInput_SelectedIndexChanged);
+            // 
+            // panel3
+            // 
+            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel3.Controls.Add(this.SYMPTOMTXT);
+            this.panel3.Controls.Add(this.CAUSETXT);
+            this.panel3.Controls.Add(this.TXTLANG);
+            this.panel3.Controls.Add(this.METHODTXT);
+            this.panel3.Controls.Add(this.CLASSTXT);
+            this.panel3.Controls.Add(this.LNETXT);
+            this.panel3.Controls.Add(this.label1);
+            this.panel3.Controls.Add(this.LNSTXT);
+            this.panel3.Controls.Add(this.APPTXT);
+            this.panel3.Controls.Add(this.LH1);
+            this.panel3.Controls.Add(this.LBLANG);
+            this.panel3.Controls.Add(this.BUGIDTXT);
+            this.panel3.Controls.Add(this.LBEND);
+            this.panel3.Controls.Add(this.LBLT);
+            this.panel3.Controls.Add(this.LBSTART);
+            this.panel3.Controls.Add(this.BUGID);
+            this.panel3.Controls.Add(this.LBCAUSE);
+            this.panel3.Controls.Add(this.LBAPP);
+            this.panel3.Controls.Add(this.LBSYMPTOM);
+            this.panel3.Controls.Add(this.LBMETHOD);
+            this.panel3.Controls.Add(this.LBCLASS);
+            this.panel3.Location = new System.Drawing.Point(653, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(492, 290);
+            this.panel3.TabIndex = 30;
+            // 
+            // SYMPTOMTXT
+            // 
+            this.SYMPTOMTXT.BackColor = System.Drawing.SystemColors.Control;
+            this.SYMPTOMTXT.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.SYMPTOMTXT.Location = new System.Drawing.Point(12, 117);
+            this.SYMPTOMTXT.Name = "SYMPTOMTXT";
+            this.SYMPTOMTXT.ReadOnly = true;
+            this.SYMPTOMTXT.Size = new System.Drawing.Size(520, 13);
+            this.SYMPTOMTXT.TabIndex = 10;
+            // 
+            // CAUSETXT
+            // 
+            this.CAUSETXT.BackColor = System.Drawing.SystemColors.Control;
+            this.CAUSETXT.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.CAUSETXT.Location = new System.Drawing.Point(95, 144);
+            this.CAUSETXT.Name = "CAUSETXT";
+            this.CAUSETXT.ReadOnly = true;
+            this.CAUSETXT.Size = new System.Drawing.Size(222, 13);
+            this.CAUSETXT.TabIndex = 11;
+            // 
+            // TXTLANG
+            // 
+            this.TXTLANG.BackColor = System.Drawing.SystemColors.Control;
+            this.TXTLANG.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TXTLANG.Location = new System.Drawing.Point(54, 77);
+            this.TXTLANG.Name = "TXTLANG";
+            this.TXTLANG.ReadOnly = true;
+            this.TXTLANG.Size = new System.Drawing.Size(219, 13);
+            this.TXTLANG.TabIndex = 28;
+            this.TXTLANG.TextChanged += new System.EventHandler(this.txtLanguage_TextChanged);
+            // 
+            // METHODTXT
+            // 
+            this.METHODTXT.BackColor = System.Drawing.SystemColors.Control;
+            this.METHODTXT.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.METHODTXT.Location = new System.Drawing.Point(85, 163);
+            this.METHODTXT.Name = "METHODTXT";
+            this.METHODTXT.ReadOnly = true;
+            this.METHODTXT.Size = new System.Drawing.Size(393, 13);
+            this.METHODTXT.TabIndex = 13;
+            // 
+            // CLASSTXT
+            // 
+            this.CLASSTXT.BackColor = System.Drawing.SystemColors.Control;
+            this.CLASSTXT.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.CLASSTXT.Location = new System.Drawing.Point(54, 162);
+            this.CLASSTXT.Name = "CLASSTXT";
+            this.CLASSTXT.ReadOnly = true;
+            this.CLASSTXT.Size = new System.Drawing.Size(463, 13);
+            this.CLASSTXT.TabIndex = 12;
+            // 
+            // LNETXT
+            // 
+            this.LNETXT.BackColor = System.Drawing.SystemColors.Control;
+            this.LNETXT.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.LNETXT.Location = new System.Drawing.Point(54, 153);
+            this.LNETXT.Name = "LNETXT";
+            this.LNETXT.ReadOnly = true;
+            this.LNETXT.Size = new System.Drawing.Size(40, 13);
+            this.LNETXT.TabIndex = 15;
+            this.LNETXT.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.LNETXT.TextChanged += new System.EventHandler(this.txtLineNoEnd_TextChanged);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(189, 4);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(101, 25);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Audit List:";
+            // 
+            // LNSTXT
+            // 
+            this.LNSTXT.BackColor = System.Drawing.SystemColors.Control;
+            this.LNSTXT.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.LNSTXT.Location = new System.Drawing.Point(95, 143);
+            this.LNSTXT.Name = "LNSTXT";
+            this.LNSTXT.ReadOnly = true;
+            this.LNSTXT.Size = new System.Drawing.Size(40, 13);
+            this.LNSTXT.TabIndex = 14;
+            this.LNSTXT.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.LNSTXT.TextChanged += new System.EventHandler(this.txtLineNoStart_TextChanged);
+            // 
+            // APPTXT
+            // 
+            this.APPTXT.BackColor = System.Drawing.SystemColors.Control;
+            this.APPTXT.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.APPTXT.Location = new System.Drawing.Point(54, 121);
+            this.APPTXT.Name = "APPTXT";
+            this.APPTXT.ReadOnly = true;
+            this.APPTXT.Size = new System.Drawing.Size(208, 13);
+            this.APPTXT.TabIndex = 4;
+            // 
+            // LH1
+            // 
+            this.LH1.AutoSize = true;
+            this.LH1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LH1.Location = new System.Drawing.Point(245, 179);
+            this.LH1.Name = "LH1";
+            this.LH1.Size = new System.Drawing.Size(11, 15);
+            this.LH1.TabIndex = 26;
+            this.LH1.Text = "-";
+            this.LH1.Click += new System.EventHandler(this.labelHyphen1_Click);
+            // 
+            // LBLANG
+            // 
+            this.LBLANG.AutoSize = true;
+            this.LBLANG.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBLANG.ForeColor = System.Drawing.Color.Black;
+            this.LBLANG.Location = new System.Drawing.Point(179, 150);
+            this.LBLANG.Name = "LBLANG";
+            this.LBLANG.Size = new System.Drawing.Size(68, 17);
+            this.LBLANG.TabIndex = 27;
+            this.LBLANG.Text = "Language";
+            // 
+            // BUGIDTXT
+            // 
+            this.BUGIDTXT.BackColor = System.Drawing.SystemColors.Control;
+            this.BUGIDTXT.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.BUGIDTXT.Location = new System.Drawing.Point(108, 58);
+            this.BUGIDTXT.Name = "BUGIDTXT";
+            this.BUGIDTXT.ReadOnly = true;
+            this.BUGIDTXT.Size = new System.Drawing.Size(121, 13);
+            this.BUGIDTXT.TabIndex = 2;
+            // 
+            // LBEND
+            // 
+            this.LBEND.AutoSize = true;
+            this.LBEND.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBEND.ForeColor = System.Drawing.SystemColors.ButtonShadow;
+            this.LBEND.Location = new System.Drawing.Point(223, 207);
+            this.LBEND.Name = "LBEND";
+            this.LBEND.Size = new System.Drawing.Size(24, 13);
+            this.LBEND.TabIndex = 19;
+            this.LBEND.Text = "End";
+            this.LBEND.Click += new System.EventHandler(this.labelLineNoEnd_Click);
+            // 
+            // LBLT
+            // 
+            this.LBLT.AutoSize = true;
+            this.LBLT.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBLT.ForeColor = System.Drawing.Color.Black;
+            this.LBLT.Location = new System.Drawing.Point(51, 179);
+            this.LBLT.Name = "LBLT";
+            this.LBLT.Size = new System.Drawing.Size(88, 17);
+            this.LBLT.TabIndex = 22;
+            this.LBLT.Text = "Line Number";
+            this.LBLT.Click += new System.EventHandler(this.labelLineTitle_Click);
+            // 
+            // LBSTART
+            // 
+            this.LBSTART.AutoSize = true;
+            this.LBSTART.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBSTART.ForeColor = System.Drawing.SystemColors.ButtonShadow;
+            this.LBSTART.Location = new System.Drawing.Point(105, 223);
+            this.LBSTART.Name = "LBSTART";
+            this.LBSTART.Size = new System.Drawing.Size(30, 13);
+            this.LBSTART.TabIndex = 18;
+            this.LBSTART.Text = "Start";
+            // 
+            // BUGID
+            // 
+            this.BUGID.AutoSize = true;
+            this.BUGID.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BUGID.Location = new System.Drawing.Point(179, 133);
+            this.BUGID.Name = "BUGID";
+            this.BUGID.Size = new System.Drawing.Size(50, 17);
+            this.BUGID.TabIndex = 5;
+            this.BUGID.Text = "Bug ID";
+            // 
+            // LBCAUSE
+            // 
+            this.LBCAUSE.AutoSize = true;
+            this.LBCAUSE.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBCAUSE.Location = new System.Drawing.Point(105, 150);
+            this.LBCAUSE.Name = "LBCAUSE";
+            this.LBCAUSE.Size = new System.Drawing.Size(44, 17);
+            this.LBCAUSE.TabIndex = 21;
+            this.LBCAUSE.Text = "Cause";
+            // 
+            // LBAPP
+            // 
+            this.LBAPP.AutoSize = true;
+            this.LBAPP.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBAPP.Location = new System.Drawing.Point(120, 150);
+            this.LBAPP.Name = "LBAPP";
+            this.LBAPP.Size = new System.Drawing.Size(79, 17);
+            this.LBAPP.TabIndex = 7;
+            this.LBAPP.Text = "Application";
+            // 
+            // LBSYMPTOM
+            // 
+            this.LBSYMPTOM.AutoSize = true;
+            this.LBSYMPTOM.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBSYMPTOM.Location = new System.Drawing.Point(145, 179);
+            this.LBSYMPTOM.Name = "LBSYMPTOM";
+            this.LBSYMPTOM.Size = new System.Drawing.Size(67, 17);
+            this.LBSYMPTOM.TabIndex = 20;
+            this.LBSYMPTOM.Text = "Symptom";
+            // 
+            // LBMETHOD
+            // 
+            this.LBMETHOD.AutoSize = true;
+            this.LBMETHOD.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBMETHOD.Location = new System.Drawing.Point(105, 117);
+            this.LBMETHOD.Name = "LBMETHOD";
+            this.LBMETHOD.Size = new System.Drawing.Size(56, 17);
+            this.LBMETHOD.TabIndex = 17;
+            this.LBMETHOD.Text = "Method";
+            // 
+            // LBCLASS
+            // 
+            this.LBCLASS.AutoSize = true;
+            this.LBCLASS.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBCLASS.Location = new System.Drawing.Point(145, 133);
+            this.LBCLASS.Name = "LBCLASS";
+            this.LBCLASS.Size = new System.Drawing.Size(39, 17);
+            this.LBCLASS.TabIndex = 16;
+            this.LBCLASS.Text = "Class";
+            // 
+            // panel4
+            // 
+            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel4.Controls.Add(this.selectionifpanel);
+            this.panel4.Location = new System.Drawing.Point(12, 0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(638, 290);
+            this.panel4.TabIndex = 31;
+            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
+            // 
+            // selectionifpanel
+            // 
+            this.selectionifpanel.Controls.Add(this.textBox1);
+            this.selectionifpanel.Controls.Add(this.selectionelsepanel);
+            this.selectionifpanel.Controls.Add(this.label3);
+            this.selectionifpanel.Location = new System.Drawing.Point(-1, 3);
+            this.selectionifpanel.Name = "selectionifpanel";
+            this.selectionifpanel.Size = new System.Drawing.Size(634, 286);
+            this.selectionifpanel.TabIndex = 0;
+            this.selectionifpanel.Visible = false;
+            // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.SystemColors.Menu;
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Location = new System.Drawing.Point(32, 30);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(586, 241);
+            this.textBox1.TabIndex = 2;
+            this.textBox1.Text = resources.GetString("textBox1.Text");
+            // 
+            // selectionelsepanel
+            // 
+            this.selectionelsepanel.Controls.Add(this.textBox2);
+            this.selectionelsepanel.Controls.Add(this.panel5);
+            this.selectionelsepanel.Controls.Add(this.label4);
+            this.selectionelsepanel.Location = new System.Drawing.Point(32, -1);
+            this.selectionelsepanel.Name = "selectionelsepanel";
+            this.selectionelsepanel.Size = new System.Drawing.Size(601, 286);
+            this.selectionelsepanel.TabIndex = 1;
+            this.selectionelsepanel.Visible = false;
+            // 
+            // textBox2
+            // 
+            this.textBox2.BackColor = System.Drawing.SystemColors.Menu;
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox2.Location = new System.Drawing.Point(0, 31);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(586, 241);
+            this.textBox2.TabIndex = 4;
+            this.textBox2.Text = resources.GetString("textBox2.Text");
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.textBox3);
+            this.panel5.Controls.Add(this.label5);
+            this.panel5.Location = new System.Drawing.Point(0, 0);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(601, 286);
+            this.panel5.TabIndex = 3;
+            this.panel5.Visible = false;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(0, 28);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(598, 20);
+            this.textBox3.TabIndex = 2;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(3, 11);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(131, 13);
+            this.label5.TabIndex = 1;
+            this.label5.Text = "Selection - Else Statement";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(3, 11);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(131, 13);
+            this.label4.TabIndex = 1;
+            this.label4.Text = "Selection - Else Statement";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(29, 13);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(117, 13);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Selection - If Statement";
             // 
             // LF
             // 
@@ -318,348 +766,15 @@
             this.label2.Text = "Command";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // LNSTXT
-            // 
-            this.LNSTXT.BackColor = System.Drawing.SystemColors.Control;
-            this.LNSTXT.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.LNSTXT.Location = new System.Drawing.Point(120, 232);
-            this.LNSTXT.Name = "LNSTXT";
-            this.LNSTXT.ReadOnly = true;
-            this.LNSTXT.Size = new System.Drawing.Size(40, 13);
-            this.LNSTXT.TabIndex = 14;
-            this.LNSTXT.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.LNSTXT.TextChanged += new System.EventHandler(this.txtLineNoStart_TextChanged);
-            // 
-            // LNETXT
-            // 
-            this.LNETXT.BackColor = System.Drawing.SystemColors.Control;
-            this.LNETXT.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.LNETXT.Location = new System.Drawing.Point(174, 232);
-            this.LNETXT.Name = "LNETXT";
-            this.LNETXT.ReadOnly = true;
-            this.LNETXT.Size = new System.Drawing.Size(40, 13);
-            this.LNETXT.TabIndex = 15;
-            this.LNETXT.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.LNETXT.TextChanged += new System.EventHandler(this.txtLineNoEnd_TextChanged);
-            // 
-            // METHODTXT
-            // 
-            this.METHODTXT.BackColor = System.Drawing.SystemColors.Control;
-            this.METHODTXT.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.METHODTXT.Location = new System.Drawing.Point(126, 208);
-            this.METHODTXT.Name = "METHODTXT";
-            this.METHODTXT.ReadOnly = true;
-            this.METHODTXT.Size = new System.Drawing.Size(393, 13);
-            this.METHODTXT.TabIndex = 13;
-            // 
-            // CLASSTXT
-            // 
-            this.CLASSTXT.BackColor = System.Drawing.SystemColors.Control;
-            this.CLASSTXT.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.CLASSTXT.Location = new System.Drawing.Point(126, 184);
-            this.CLASSTXT.Name = "CLASSTXT";
-            this.CLASSTXT.ReadOnly = true;
-            this.CLASSTXT.Size = new System.Drawing.Size(463, 13);
-            this.CLASSTXT.TabIndex = 12;
-            // 
-            // CAUSETXT
-            // 
-            this.CAUSETXT.BackColor = System.Drawing.SystemColors.Control;
-            this.CAUSETXT.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.CAUSETXT.Location = new System.Drawing.Point(126, 166);
-            this.CAUSETXT.Name = "CAUSETXT";
-            this.CAUSETXT.ReadOnly = true;
-            this.CAUSETXT.Size = new System.Drawing.Size(222, 13);
-            this.CAUSETXT.TabIndex = 11;
-            // 
-            // SYMPTOMTXT
-            // 
-            this.SYMPTOMTXT.BackColor = System.Drawing.SystemColors.Control;
-            this.SYMPTOMTXT.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.SYMPTOMTXT.Location = new System.Drawing.Point(126, 106);
-            this.SYMPTOMTXT.Name = "SYMPTOMTXT";
-            this.SYMPTOMTXT.ReadOnly = true;
-            this.SYMPTOMTXT.Size = new System.Drawing.Size(520, 13);
-            this.SYMPTOMTXT.TabIndex = 10;
-            // 
-            // BUGIDTXT
-            // 
-            this.BUGIDTXT.BackColor = System.Drawing.SystemColors.Control;
-            this.BUGIDTXT.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.BUGIDTXT.Location = new System.Drawing.Point(126, 14);
-            this.BUGIDTXT.Name = "BUGIDTXT";
-            this.BUGIDTXT.ReadOnly = true;
-            this.BUGIDTXT.Size = new System.Drawing.Size(121, 13);
-            this.BUGIDTXT.TabIndex = 2;
-            // 
-            // APPTXT
-            // 
-            this.APPTXT.BackColor = System.Drawing.SystemColors.Control;
-            this.APPTXT.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.APPTXT.Location = new System.Drawing.Point(126, 58);
-            this.APPTXT.Name = "APPTXT";
-            this.APPTXT.ReadOnly = true;
-            this.APPTXT.Size = new System.Drawing.Size(208, 13);
-            this.APPTXT.TabIndex = 4;
-            // 
-            // LH1
-            // 
-            this.LH1.AutoSize = true;
-            this.LH1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LH1.Location = new System.Drawing.Point(162, 229);
-            this.LH1.Name = "LH1";
-            this.LH1.Size = new System.Drawing.Size(11, 15);
-            this.LH1.TabIndex = 26;
-            this.LH1.Text = "-";
-            this.LH1.Click += new System.EventHandler(this.labelHyphen1_Click);
-            // 
-            // LBEND
-            // 
-            this.LBEND.AutoSize = true;
-            this.LBEND.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBEND.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.LBEND.Location = new System.Drawing.Point(193, 248);
-            this.LBEND.Name = "LBEND";
-            this.LBEND.Size = new System.Drawing.Size(24, 13);
-            this.LBEND.TabIndex = 19;
-            this.LBEND.Text = "End";
-            this.LBEND.Click += new System.EventHandler(this.labelLineNoEnd_Click);
-            // 
-            // LBSTART
-            // 
-            this.LBSTART.AutoSize = true;
-            this.LBSTART.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBSTART.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.LBSTART.Location = new System.Drawing.Point(118, 248);
-            this.LBSTART.Name = "LBSTART";
-            this.LBSTART.Size = new System.Drawing.Size(30, 13);
-            this.LBSTART.TabIndex = 18;
-            this.LBSTART.Text = "Start";
-            // 
-            // LBLT
-            // 
-            this.LBLT.AutoSize = true;
-            this.LBLT.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBLT.ForeColor = System.Drawing.Color.Black;
-            this.LBLT.Location = new System.Drawing.Point(19, 228);
-            this.LBLT.Name = "LBLT";
-            this.LBLT.Size = new System.Drawing.Size(88, 17);
-            this.LBLT.TabIndex = 22;
-            this.LBLT.Text = "Line Number";
-            this.LBLT.Click += new System.EventHandler(this.labelLineTitle_Click);
-            // 
-            // LBMETHOD
-            // 
-            this.LBMETHOD.AutoSize = true;
-            this.LBMETHOD.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBMETHOD.Location = new System.Drawing.Point(19, 205);
-            this.LBMETHOD.Name = "LBMETHOD";
-            this.LBMETHOD.Size = new System.Drawing.Size(56, 17);
-            this.LBMETHOD.TabIndex = 17;
-            this.LBMETHOD.Text = "Method";
-            // 
-            // LBCLASS
-            // 
-            this.LBCLASS.AutoSize = true;
-            this.LBCLASS.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBCLASS.Location = new System.Drawing.Point(19, 184);
-            this.LBCLASS.Name = "LBCLASS";
-            this.LBCLASS.Size = new System.Drawing.Size(39, 17);
-            this.LBCLASS.TabIndex = 16;
-            this.LBCLASS.Text = "Class";
-            // 
-            // LBCAUSE
-            // 
-            this.LBCAUSE.AutoSize = true;
-            this.LBCAUSE.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBCAUSE.Location = new System.Drawing.Point(19, 163);
-            this.LBCAUSE.Name = "LBCAUSE";
-            this.LBCAUSE.Size = new System.Drawing.Size(44, 17);
-            this.LBCAUSE.TabIndex = 21;
-            this.LBCAUSE.Text = "Cause";
-            // 
-            // BUGID
-            // 
-            this.BUGID.AutoSize = true;
-            this.BUGID.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BUGID.Location = new System.Drawing.Point(19, 11);
-            this.BUGID.Name = "BUGID";
-            this.BUGID.Size = new System.Drawing.Size(50, 17);
-            this.BUGID.TabIndex = 5;
-            this.BUGID.Text = "Bug ID";
-            // 
-            // LBAPP
-            // 
-            this.LBAPP.AutoSize = true;
-            this.LBAPP.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBAPP.Location = new System.Drawing.Point(18, 55);
-            this.LBAPP.Name = "LBAPP";
-            this.LBAPP.Size = new System.Drawing.Size(79, 17);
-            this.LBAPP.TabIndex = 7;
-            this.LBAPP.Text = "Application";
-            // 
-            // LBLANG
-            // 
-            this.LBLANG.AutoSize = true;
-            this.LBLANG.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBLANG.ForeColor = System.Drawing.Color.Black;
-            this.LBLANG.Location = new System.Drawing.Point(18, 78);
-            this.LBLANG.Name = "LBLANG";
-            this.LBLANG.Size = new System.Drawing.Size(68, 17);
-            this.LBLANG.TabIndex = 27;
-            this.LBLANG.Text = "Language";
-            // 
-            // LBSYMPTOM
-            // 
-            this.LBSYMPTOM.AutoSize = true;
-            this.LBSYMPTOM.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBSYMPTOM.Location = new System.Drawing.Point(19, 102);
-            this.LBSYMPTOM.Name = "LBSYMPTOM";
-            this.LBSYMPTOM.Size = new System.Drawing.Size(67, 17);
-            this.LBSYMPTOM.TabIndex = 20;
-            this.LBSYMPTOM.Text = "Symptom";
-            // 
-            // TXTLANG
-            // 
-            this.TXTLANG.BackColor = System.Drawing.SystemColors.Control;
-            this.TXTLANG.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TXTLANG.Location = new System.Drawing.Point(126, 82);
-            this.TXTLANG.Name = "TXTLANG";
-            this.TXTLANG.ReadOnly = true;
-            this.TXTLANG.Size = new System.Drawing.Size(219, 13);
-            this.TXTLANG.TabIndex = 28;
-            this.TXTLANG.TextChanged += new System.EventHandler(this.txtLanguage_TextChanged);
-            // 
-            // panel4
-            // 
-            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel4.Location = new System.Drawing.Point(12, 0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(638, 290);
-            this.panel4.TabIndex = 31;
-            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
-            // 
-            // panel3
-            // 
-            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel3.Controls.Add(this.label1);
-            this.panel3.Location = new System.Drawing.Point(653, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(492, 290);
-            this.panel3.TabIndex = 30;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(189, 4);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(101, 25);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Audit List:";
-            // 
-            // LBINPUT
-            // 
-            this.LBINPUT.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.LBINPUT.BackColor = System.Drawing.SystemColors.Window;
-            this.LBINPUT.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.LBINPUT.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBINPUT.FormattingEnabled = true;
-            this.LBINPUT.ItemHeight = 15;
-            this.LBINPUT.Location = new System.Drawing.Point(666, 33);
-            this.LBINPUT.Margin = new System.Windows.Forms.Padding(0);
-            this.LBINPUT.MaximumSize = new System.Drawing.Size(485, 242);
-            this.LBINPUT.MinimumSize = new System.Drawing.Size(300, 210);
-            this.LBINPUT.Name = "LBINPUT";
-            this.LBINPUT.ScrollAlwaysVisible = true;
-            this.LBINPUT.Size = new System.Drawing.Size(466, 242);
-            this.LBINPUT.TabIndex = 1;
-            this.LBINPUT.Tag = "";
-            this.LBINPUT.SelectedIndexChanged += new System.EventHandler(this.ListBoxInput_SelectedIndexChanged);
-            // 
-            // Iteration
-            // 
-            this.Iteration.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem2,
-            this.toolStripMenuItem3,
-            this.toolStripMenuItem4,
-            this.toolStripMenuItem5,
-            this.toolStripMenuItem6});
-            this.Iteration.Name = "Iteration";
-            this.Iteration.Size = new System.Drawing.Size(67, 20);
-            this.Iteration.Text = "Selection";
-            // 
-            // toolStripMenuItem2
-            // 
-            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
-            this.toolStripMenuItem2.Text = "If";
-            // 
-            // toolStripMenuItem3
-            // 
-            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(180, 22);
-            this.toolStripMenuItem3.Text = "Else";
-            // 
-            // toolStripMenuItem4
-            // 
-            this.toolStripMenuItem4.Name = "toolStripMenuItem4";
-            this.toolStripMenuItem4.Size = new System.Drawing.Size(180, 22);
-            this.toolStripMenuItem4.Text = "Switch";
-            // 
-            // toolStripMenuItem5
-            // 
-            this.toolStripMenuItem5.Name = "toolStripMenuItem5";
-            this.toolStripMenuItem5.Size = new System.Drawing.Size(180, 22);
-            this.toolStripMenuItem5.Text = "Case";
-            // 
-            // toolStripMenuItem6
-            // 
-            this.toolStripMenuItem6.Name = "toolStripMenuItem6";
-            this.toolStripMenuItem6.Size = new System.Drawing.Size(180, 22);
-            this.toolStripMenuItem6.Text = "Default";
-            // 
-            // toolStripMenuItem7
-            // 
-            this.toolStripMenuItem7.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem1,
-            this.toolStripMenuItem8,
-            this.toolStripMenuItem9,
-            this.toolStripMenuItem10});
-            this.toolStripMenuItem7.Name = "toolStripMenuItem7";
-            this.toolStripMenuItem7.Size = new System.Drawing.Size(63, 20);
-            this.toolStripMenuItem7.Text = "Iteration";
-            // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
-            this.toolStripMenuItem1.Text = "Do";
-            // 
-            // toolStripMenuItem8
-            // 
-            this.toolStripMenuItem8.Name = "toolStripMenuItem8";
-            this.toolStripMenuItem8.Size = new System.Drawing.Size(180, 22);
-            this.toolStripMenuItem8.Text = "For";
-            // 
-            // toolStripMenuItem9
-            // 
-            this.toolStripMenuItem9.Name = "toolStripMenuItem9";
-            this.toolStripMenuItem9.Size = new System.Drawing.Size(180, 22);
-            this.toolStripMenuItem9.Text = "foreach, in";
-            // 
-            // toolStripMenuItem10
-            // 
-            this.toolStripMenuItem10.Name = "toolStripMenuItem10";
-            this.toolStripMenuItem10.Size = new System.Drawing.Size(180, 22);
-            this.toolStripMenuItem10.Text = "While";
-            // 
-            // toolStripMenuItem11
-            // 
-            this.toolStripMenuItem11.Name = "toolStripMenuItem11";
-            this.toolStripMenuItem11.Size = new System.Drawing.Size(70, 20);
-            this.toolStripMenuItem11.Text = "Sequence";
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(749, 385);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 30;
+            this.button1.Text = "Paint Tool";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Main
             // 
@@ -667,6 +782,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Indigo;
             this.ClientSize = new System.Drawing.Size(1321, 728);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.txtCode);
@@ -681,11 +797,17 @@
             this.MS1.ResumeLayout(false);
             this.MS1.PerformLayout();
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.selectionifpanel.ResumeLayout(false);
+            this.selectionifpanel.PerformLayout();
+            this.selectionelsepanel.ResumeLayout(false);
+            this.selectionelsepanel.PerformLayout();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -738,8 +860,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.ToolStripMenuItem Iteration;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
+        private System.Windows.Forms.ToolStripMenuItem buttonselectionif;
+        private System.Windows.Forms.ToolStripMenuItem buttonselectionelse;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem4;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem5;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem6;
@@ -749,6 +871,16 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem9;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem10;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem11;
+        private System.Windows.Forms.Panel selectionifpanel;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Panel selectionelsepanel;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Button button1;
     }
 }
 

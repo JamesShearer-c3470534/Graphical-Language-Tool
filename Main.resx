@@ -162,6 +162,15 @@
         b+u8AAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="textBox1.Text" xml:space="preserve">
+    <value>An if statement, in C#, is a programming construct in C# used to selectively execute code statements based on the result of evaluating a Boolean expression. The Boolean expression must return either a true or false value. The if statement is used as a control statement to branch to different sections of code depending on the result of the Boolean conditional expression. The expression is stated within parentheses and evaluated during execution. If the expression results in a true value, the code following the if statement is executed. Otherwise, the code following an optional "else" statement is executed. If there is no else statement, execution continues with the code after the if block.</value>
+  </data>
+  <data name="textBox2.Text" xml:space="preserve">
+    <value>An if statement, in C#, is a programming construct in C# used to selectively execute code statements based on the result of evaluating a Boolean expression. The Boolean expression must return either a true or false value. The if statement is used as a control statement to branch to different sections of code depending on the result of the Boolean conditional expression. The expression is stated within parentheses and evaluated during execution. If the expression results in a true value, the code following the if statement is executed. Otherwise, the code following an optional "else" statement is executed. If there is no else statement, execution continues with the code after the if block.</value>
+  </data>
+  <metadata name="TTF.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>93, 17</value>
+  </metadata>
   <metadata name="TTF.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>93, 17</value>
   </metadata>
