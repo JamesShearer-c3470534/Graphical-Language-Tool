@@ -1,0 +1,13 @@
+C:\Users\james\Downloads\ASEA2-master\BugTracker\bin\Debug\GraphicalLanguageTool.exe.config
+C:\Users\james\Downloads\ASEA2-master\BugTracker\bin\Debug\GraphicalLanguageTool.exe
+C:\Users\james\Downloads\ASEA2-master\BugTracker\bin\Debug\GraphicalLanguageTool.pdb
+C:\Users\james\Downloads\ASEA2-master\BugTracker\obj\Debug\GraphicalLanguageTool.NewBugForm.resources
+C:\Users\james\Downloads\ASEA2-master\BugTracker\obj\Debug\GraphicalLanguageTool.Login.resources
+C:\Users\james\Downloads\ASEA2-master\BugTracker\obj\Debug\GraphicalLanguageTool.Main.resources
+C:\Users\james\Downloads\ASEA2-master\BugTracker\obj\Debug\GraphicalLanguageTool.OpenBug.resources
+C:\Users\james\Downloads\ASEA2-master\BugTracker\obj\Debug\GraphicalLanguageTool.Properties.Resources.resources
+C:\Users\james\Downloads\ASEA2-master\BugTracker\obj\Debug\GraphicalLanguageTool.csproj.GenerateResource.cache
+C:\Users\james\Downloads\ASEA2-master\BugTracker\obj\Debug\GraphicalLanguageTool.csproj.CoreCompileInputs.cache
+C:\Users\james\Downloads\ASEA2-master\BugTracker\obj\Debug\GraphicalLanguageTool.csproj.CopyComplete
+C:\Users\james\Downloads\ASEA2-master\BugTracker\obj\Debug\GraphicalLanguageTool.exe
+C:\Users\james\Downloads\ASEA2-master\BugTracker\obj\Debug\GraphicalLanguageTool.pdb
