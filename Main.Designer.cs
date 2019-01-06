@@ -56,6 +56,7 @@ namespace GraphicalLanguageTool
             this.toolStripMenuItem10 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem11 = new System.Windows.Forms.ToolStripMenuItem();
             this.button1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.HELP = new System.Windows.Forms.ToolStripMenuItem();
             this.ABOUT = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -129,12 +130,14 @@ namespace GraphicalLanguageTool
             this.toolStripMenuItem7,
             this.toolStripMenuItem11,
             this.button1,
+            this.toolStripMenuItem2,
             this.HELP});
             this.MS1.Location = new System.Drawing.Point(0, 0);
             this.MS1.Name = "MS1";
             this.MS1.Size = new System.Drawing.Size(1321, 24);
             this.MS1.TabIndex = 25;
             this.MS1.Text = "MS1";
+            this.MS1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.MS1_ItemClicked);
             // 
             // FILE
             // 
@@ -298,6 +301,13 @@ namespace GraphicalLanguageTool
             this.button1.Size = new System.Drawing.Size(72, 20);
             this.button1.Text = "Paint Tool";
             this.button1.Click += new System.EventHandler(this.Button1_Click_1);
+            // 
+            // toolStripMenuItem2
+            // 
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(101, 20);
+            this.toolStripMenuItem2.Text = "Command Line";
+            this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
             // 
             // HELP
             // 
@@ -735,7 +745,7 @@ namespace GraphicalLanguageTool
             this.USERNAMETXT.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.USERNAMETXT.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.USERNAMETXT.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.USERNAMETXT.Location = new System.Drawing.Point(586, 5);
+            this.USERNAMETXT.Location = new System.Drawing.Point(467, 6);
             this.USERNAMETXT.Name = "USERNAMETXT";
             this.USERNAMETXT.ReadOnly = true;
             this.USERNAMETXT.Size = new System.Drawing.Size(110, 16);
@@ -746,7 +756,7 @@ namespace GraphicalLanguageTool
             this.LBUSERNAME.AutoSize = true;
             this.LBUSERNAME.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.LBUSERNAME.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBUSERNAME.Location = new System.Drawing.Point(489, 4);
+            this.LBUSERNAME.Location = new System.Drawing.Point(583, 4);
             this.LBUSERNAME.Name = "LBUSERNAME";
             this.LBUSERNAME.Size = new System.Drawing.Size(91, 17);
             this.LBUSERNAME.TabIndex = 6;
@@ -861,6 +871,7 @@ namespace GraphicalLanguageTool
         private System.Windows.Forms.TextBox LF;
         private System.Windows.Forms.TextBox USERNAMETXT;
         private System.Windows.Forms.Label LBUSERNAME;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
     }
 }
 

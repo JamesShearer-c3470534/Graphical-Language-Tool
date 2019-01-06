@@ -26,4 +26,5 @@ C:\Users\james\Documents\GitHub\Graphical-Language-Tool\obj\Debug\GraphicalLangu
 C:\Users\james\Documents\GitHub\Graphical-Language-Tool\obj\Debug\GraphicalLanguageTool.exe
 C:\Users\james\Documents\GitHub\Graphical-Language-Tool\obj\Debug\GraphicalLanguageTool.pdb
 C:\Users\james\Documents\GitHub\Graphical-Language-Tool\obj\Debug\GraphicalLanguageTool.About.resources
-C:\Users\james\Documents\GitHub\Graphical-Language-Tool\obj\Debug\GraphicalLanguageTool.Form1.resources
+C:\Users\james\Documents\GitHub\Graphical-Language-Tool\obj\Debug\GraphicalLanguageTool.Form2.resources
+C:\Users\james\Documents\GitHub\Graphical-Language-Tool\obj\Debug\TestCommandLine.Form1.resources

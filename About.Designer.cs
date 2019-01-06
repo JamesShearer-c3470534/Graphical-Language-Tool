@@ -70,7 +70,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(157, 16);
             this.label4.TabIndex = 3;
-            this.label4.Text = "Anoop Kumar Sharma";
+            this.label4.Text = "James Shearer - Software Engineering Student.";
             // 
             // About
             // 

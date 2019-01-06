@@ -5,6 +5,7 @@ using System.IO;
 using ICSharpCode.TextEditor.Document;
 using GraphicalLanguageTool;
 using GraphicalLanguageTool;
+using TestCommandLine;
 
 namespace GraphicalLanguageTool
 {
@@ -393,9 +394,21 @@ namespace GraphicalLanguageTool
 
         private void Button1_Click_1(object sender, EventArgs e)
         {
-        Form1 paint = new Form1();
+        Form2 paint = new Form2();
                     paint.Show(); // or somename.ShowDialog(); if you want the new form to have priority until it is closed
         }
-        
+
+        private void MS1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void toolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+           
+                Form1 commandline = new Form1();
+                commandline.Show(); // or somename.ShowDialog(); if you want the new form to have priority until it is closed
+            
+        }
     }
 }
