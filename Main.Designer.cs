@@ -1,4 +1,6 @@
-﻿namespace GraphicalLanguageTool
+﻿using System;
+
+namespace GraphicalLanguageTool
 {
     partial class Main
     {
@@ -30,8 +32,6 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
-            this.USERNAMETXT = new System.Windows.Forms.TextBox();
-            this.LBUSERNAME = new System.Windows.Forms.Label();
             this.txtCode = new ICSharpCode.TextEditor.TextEditorControl();
             this.MS1 = new System.Windows.Forms.MenuStrip();
             this.FILE = new System.Windows.Forms.ToolStripMenuItem();
@@ -55,6 +55,7 @@
             this.toolStripMenuItem9 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem10 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem11 = new System.Windows.Forms.ToolStripMenuItem();
+            this.button1 = new System.Windows.Forms.ToolStripMenuItem();
             this.HELP = new System.Windows.Forms.ToolStripMenuItem();
             this.ABOUT = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -87,16 +88,15 @@
             this.selectionelsepanel = new System.Windows.Forms.Panel();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.LF = new System.Windows.Forms.TextBox();
             this.BF = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
+            this.LF = new System.Windows.Forms.TextBox();
             this.TTF = new System.Windows.Forms.ToolTip(this.components);
-            this.button1 = new System.Windows.Forms.Button();
+            this.USERNAMETXT = new System.Windows.Forms.TextBox();
+            this.LBUSERNAME = new System.Windows.Forms.Label();
             this.MS1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -106,28 +106,6 @@
             this.panel5.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // USERNAMETXT
-            // 
-            this.USERNAMETXT.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.USERNAMETXT.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.USERNAMETXT.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.USERNAMETXT.Location = new System.Drawing.Point(24, 187);
-            this.USERNAMETXT.Name = "USERNAMETXT";
-            this.USERNAMETXT.ReadOnly = true;
-            this.USERNAMETXT.Size = new System.Drawing.Size(110, 16);
-            this.USERNAMETXT.TabIndex = 3;
-            // 
-            // LBUSERNAME
-            // 
-            this.LBUSERNAME.AutoSize = true;
-            this.LBUSERNAME.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.LBUSERNAME.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBUSERNAME.Location = new System.Drawing.Point(32, 162);
-            this.LBUSERNAME.Name = "LBUSERNAME";
-            this.LBUSERNAME.Size = new System.Drawing.Size(91, 17);
-            this.LBUSERNAME.TabIndex = 6;
-            this.LBUSERNAME.Text = "Logged in as:";
             // 
             // txtCode
             // 
@@ -150,6 +128,7 @@
             this.Iteration,
             this.toolStripMenuItem7,
             this.toolStripMenuItem11,
+            this.button1,
             this.HELP});
             this.MS1.Location = new System.Drawing.Point(0, 0);
             this.MS1.Name = "MS1";
@@ -176,55 +155,55 @@
             // 
             this.NEW.Name = "NEW";
             this.NEW.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.NEW.Size = new System.Drawing.Size(183, 22);
-            this.NEW.Text = "New (Bug)";
+            this.NEW.Size = new System.Drawing.Size(203, 22);
+            this.NEW.Text = "New Statement";
             this.NEW.Click += new System.EventHandler(this.NewToolStripMenuItem_Click);
             // 
             // OPEN
             // 
             this.OPEN.Name = "OPEN";
             this.OPEN.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.OPEN.Size = new System.Drawing.Size(183, 22);
-            this.OPEN.Text = "Open (Bug)";
+            this.OPEN.Size = new System.Drawing.Size(203, 22);
+            this.OPEN.Text = "Open Statement";
             this.OPEN.Click += new System.EventHandler(this.OpenToolStripMenuItem_Click);
             // 
             // STS1
             // 
             this.STS1.Name = "STS1";
-            this.STS1.Size = new System.Drawing.Size(180, 6);
+            this.STS1.Size = new System.Drawing.Size(200, 6);
             // 
             // SUBMIT
             // 
             this.SUBMIT.Name = "SUBMIT";
             this.SUBMIT.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.SUBMIT.Size = new System.Drawing.Size(183, 22);
-            this.SUBMIT.Text = "Submit (Edit)";
+            this.SUBMIT.Size = new System.Drawing.Size(203, 22);
+            this.SUBMIT.Text = "Save";
             this.SUBMIT.Click += new System.EventHandler(this.SubmitAuditToolStripMenuItem_Click);
             // 
             // STS2
             // 
             this.STS2.Name = "STS2";
-            this.STS2.Size = new System.Drawing.Size(180, 6);
+            this.STS2.Size = new System.Drawing.Size(200, 6);
             // 
             // logoutToolStripMenuItem
             // 
             this.logoutToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("logoutToolStripMenuItem.Image")));
             this.logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
             this.logoutToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.L)));
-            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(183, 22);
+            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(203, 22);
             this.logoutToolStripMenuItem.Text = "Logout";
             this.logoutToolStripMenuItem.Click += new System.EventHandler(this.LogoutToolStripMenuItem_Click);
             // 
             // STS3
             // 
             this.STS3.Name = "STS3";
-            this.STS3.Size = new System.Drawing.Size(180, 6);
+            this.STS3.Size = new System.Drawing.Size(200, 6);
             // 
             // EXIT
             // 
             this.EXIT.Name = "EXIT";
             this.EXIT.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F4)));
-            this.EXIT.Size = new System.Drawing.Size(183, 22);
+            this.EXIT.Size = new System.Drawing.Size(203, 22);
             this.EXIT.Text = "Exit";
             this.EXIT.Click += new System.EventHandler(this.ExitToolStripMenuItem_Click);
             // 
@@ -312,6 +291,13 @@
             this.toolStripMenuItem11.Name = "toolStripMenuItem11";
             this.toolStripMenuItem11.Size = new System.Drawing.Size(70, 20);
             this.toolStripMenuItem11.Text = "Sequence";
+            // 
+            // button1
+            // 
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(72, 20);
+            this.button1.Text = "Paint Tool";
+            this.button1.Click += new System.EventHandler(this.Button1_Click_1);
             // 
             // HELP
             // 
@@ -670,20 +656,12 @@
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.textBox3);
             this.panel5.Controls.Add(this.label5);
             this.panel5.Location = new System.Drawing.Point(0, 0);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(601, 286);
             this.panel5.TabIndex = 3;
             this.panel5.Visible = false;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(0, 28);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(598, 20);
-            this.textBox3.TabIndex = 2;
             // 
             // label5
             // 
@@ -712,20 +690,6 @@
             this.label3.TabIndex = 0;
             this.label3.Text = "Selection - If Statement";
             // 
-            // LF
-            // 
-            this.LF.BackColor = System.Drawing.SystemColors.Control;
-            this.LF.Cursor = System.Windows.Forms.Cursors.Default;
-            this.LF.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LF.Location = new System.Drawing.Point(22, 223);
-            this.LF.Name = "LF";
-            this.LF.ReadOnly = true;
-            this.LF.Size = new System.Drawing.Size(112, 20);
-            this.LF.TabIndex = 31;
-            this.LF.Text = "Unfixed";
-            this.LF.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TTF.SetToolTip(this.LF, "Only source code creator may change \'Fixed\' status of bug.");
-            // 
             // BF
             // 
             this.BF.Location = new System.Drawing.Point(22, 249);
@@ -743,9 +707,6 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BackColor = System.Drawing.SystemColors.Control;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.LBUSERNAME);
-            this.panel2.Controls.Add(this.USERNAMETXT);
             this.panel2.Controls.Add(this.LF);
             this.panel2.Controls.Add(this.BF);
             this.panel2.Location = new System.Drawing.Point(1154, 24);
@@ -755,26 +716,41 @@
             this.panel2.TabIndex = 29;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
-            // label2
+            // LF
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(30, 4);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(104, 25);
-            this.label2.TabIndex = 32;
-            this.label2.Text = "Command";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.LF.BackColor = System.Drawing.SystemColors.Control;
+            this.LF.Cursor = System.Windows.Forms.Cursors.Default;
+            this.LF.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LF.Location = new System.Drawing.Point(22, 223);
+            this.LF.Name = "LF";
+            this.LF.ReadOnly = true;
+            this.LF.Size = new System.Drawing.Size(112, 20);
+            this.LF.TabIndex = 31;
+            this.LF.Text = "Unfixed";
+            this.LF.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TTF.SetToolTip(this.LF, "Only source code creator may change \'Fixed\' status of bug.");
             // 
-            // button1
+            // USERNAMETXT
             // 
-            this.button1.Location = new System.Drawing.Point(749, 385);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 30;
-            this.button1.Text = "Paint Tool";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.USERNAMETXT.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.USERNAMETXT.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.USERNAMETXT.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.USERNAMETXT.Location = new System.Drawing.Point(586, 5);
+            this.USERNAMETXT.Name = "USERNAMETXT";
+            this.USERNAMETXT.ReadOnly = true;
+            this.USERNAMETXT.Size = new System.Drawing.Size(110, 16);
+            this.USERNAMETXT.TabIndex = 3;
+            // 
+            // LBUSERNAME
+            // 
+            this.LBUSERNAME.AutoSize = true;
+            this.LBUSERNAME.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.LBUSERNAME.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBUSERNAME.Location = new System.Drawing.Point(489, 4);
+            this.LBUSERNAME.Name = "LBUSERNAME";
+            this.LBUSERNAME.Size = new System.Drawing.Size(91, 17);
+            this.LBUSERNAME.TabIndex = 6;
+            this.LBUSERNAME.Text = "Logged in as:";
             // 
             // Main
             // 
@@ -782,8 +758,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Indigo;
             this.ClientSize = new System.Drawing.Size(1321, 728);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.USERNAMETXT);
             this.Controls.Add(this.panel2);
+            this.Controls.Add(this.LBUSERNAME);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.txtCode);
             this.Controls.Add(this.MS1);
@@ -813,9 +790,12 @@
 
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
         #endregion
-        private System.Windows.Forms.TextBox USERNAMETXT;
-        private System.Windows.Forms.Label LBUSERNAME;
         private ICSharpCode.TextEditor.TextEditorControl txtCode;
         private System.Windows.Forms.MenuStrip MS1;
         private System.Windows.Forms.ToolStripMenuItem FILE;
@@ -831,33 +811,9 @@
         private System.Windows.Forms.ToolStripSeparator STS2;
         private System.Windows.Forms.ToolStripSeparator STS3;
         private System.Windows.Forms.Button BF;
-        private System.Windows.Forms.TextBox LF;
         private System.Windows.Forms.ToolTip TTF;
         private System.Windows.Forms.ToolStripMenuItem ABOUT;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ListBox LBINPUT;
-        private System.Windows.Forms.TextBox TXTLANG;
-        private System.Windows.Forms.Label LBLANG;
-        private System.Windows.Forms.Label LH1;
-        private System.Windows.Forms.TextBox APPTXT;
-        private System.Windows.Forms.Label LBLT;
-        private System.Windows.Forms.TextBox BUGIDTXT;
-        private System.Windows.Forms.Label LBCAUSE;
-        private System.Windows.Forms.Label BUGID;
-        private System.Windows.Forms.Label LBSYMPTOM;
-        private System.Windows.Forms.Label LBAPP;
-        private System.Windows.Forms.Label LBEND;
-        private System.Windows.Forms.TextBox SYMPTOMTXT;
-        private System.Windows.Forms.Label LBSTART;
-        private System.Windows.Forms.TextBox CAUSETXT;
-        private System.Windows.Forms.Label LBMETHOD;
-        private System.Windows.Forms.TextBox CLASSTXT;
-        private System.Windows.Forms.Label LBCLASS;
-        private System.Windows.Forms.TextBox METHODTXT;
-        private System.Windows.Forms.TextBox LNETXT;
-        private System.Windows.Forms.TextBox LNSTXT;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.ToolStripMenuItem Iteration;
         private System.Windows.Forms.ToolStripMenuItem buttonselectionif;
@@ -879,8 +835,32 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ToolStripMenuItem button1;
+        private System.Windows.Forms.ListBox LBINPUT;
+        private System.Windows.Forms.TextBox SYMPTOMTXT;
+        private System.Windows.Forms.TextBox CAUSETXT;
+        private System.Windows.Forms.TextBox TXTLANG;
+        private System.Windows.Forms.TextBox METHODTXT;
+        private System.Windows.Forms.TextBox CLASSTXT;
+        private System.Windows.Forms.TextBox LNETXT;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox LNSTXT;
+        private System.Windows.Forms.TextBox APPTXT;
+        private System.Windows.Forms.Label LH1;
+        private System.Windows.Forms.Label LBLANG;
+        private System.Windows.Forms.TextBox BUGIDTXT;
+        private System.Windows.Forms.Label LBEND;
+        private System.Windows.Forms.Label LBLT;
+        private System.Windows.Forms.Label LBSTART;
+        private System.Windows.Forms.Label BUGID;
+        private System.Windows.Forms.Label LBCAUSE;
+        private System.Windows.Forms.Label LBAPP;
+        private System.Windows.Forms.Label LBSYMPTOM;
+        private System.Windows.Forms.Label LBMETHOD;
+        private System.Windows.Forms.Label LBCLASS;
+        private System.Windows.Forms.TextBox LF;
+        private System.Windows.Forms.TextBox USERNAMETXT;
+        private System.Windows.Forms.Label LBUSERNAME;
     }
 }
 

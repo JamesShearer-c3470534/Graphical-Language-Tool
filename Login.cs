@@ -28,7 +28,7 @@ namespace GraphicalLanguageTool
         {
             SqlConnection loginConnection = new SqlConnection
                 (@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename = 
-                |DataDirectory|\btdb.mdf;");
+                |DataDirectory|\ASEABugTrackDB.mdf;");
             SqlDataAdapter sda = new SqlDataAdapter("Select Count(*) From UserTable where Username='" + loginusername.Text + "' and Password = '" + loginpass.Text + "'", loginConnection);
             DataTable dt = new DataTable();
             sda.Fill(dt);

@@ -43,14 +43,9 @@ namespace GraphicalLanguageTool
                 newBugConnection.Open();
                 SqlCommand cmdInsert = new SqlCommand(commandString, newBugConnection);
                 cmdInsert.Parameters.AddWithValue("@Username", GraphicalLanguageTool.Login.sessionUsername);
-                cmdInsert.Parameters.AddWithValue("@Application", application);
-                cmdInsert.Parameters.AddWithValue("@Symptom", symptom);
-                cmdInsert.Parameters.AddWithValue("@Cause", cause);
-                cmdInsert.Parameters.AddWithValue("@Class", tclass);
-                cmdInsert.Parameters.AddWithValue("@Method", method);
+                
                 cmdInsert.Parameters.AddWithValue("@Code", code);
-                cmdInsert.Parameters.AddWithValue("@LineNoStart", linenostart);
-                cmdInsert.Parameters.AddWithValue("@LineEndStart", linenoend);
+         
                 cmdInsert.Parameters.AddWithValue("@Language", language);
                 cmdInsert.ExecuteNonQuery();
                 this.Hide();
@@ -106,14 +101,9 @@ namespace GraphicalLanguageTool
             bool rtnvalue = true;
 
             if (
-                string.IsNullOrEmpty(txtApplicationNew.Text) ||
-                string.IsNullOrEmpty(txtSymptomNew.Text) ||
-                string.IsNullOrEmpty(txtCauseNew.Text) ||
-                string.IsNullOrEmpty(txtClassNew.Text) ||
-                string.IsNullOrEmpty(txtMethodNew.Text) ||
+               
                 string.IsNullOrEmpty(txtCodeNew.Text) ||
-                string.IsNullOrEmpty(txtLineNoStartNew.Text) ||
-                string.IsNullOrEmpty(txtLineNoEndNew.Text) ||
+                
                 comboBoxLanguage.Text == "")
             {
                 MessageBox.Show("Error: Please check your inputs");
@@ -130,15 +120,15 @@ namespace GraphicalLanguageTool
         {
             if (CheckInputs())
             {
-                String bugCommandString = "INSERT INTO BugTable(Username, Application, Symptom, Cause, Class, Method, CodeBlock, LineNoStart, LineNoEnd, Language) VALUES (@Username, @Application, @Symptom, @Cause, @Class, @Method, @Code, @LineNoStart, @LineEndStart, @Language)";
-                InsertBugRecord(txtApplicationNew.Text, txtSymptomNew.Text, txtCauseNew.Text, txtClassNew.Text, txtMethodNew.Text, txtCodeNew.Text, txtLineNoStartNew.Text, txtLineNoEndNew.Text, comboBoxLanguage.SelectedItem.ToString(), bugCommandString);
+                String bugCommandString = "INSERT INTO BugTable(Username, CodeBlock, Language) VALUES (@Username, @Code, @Language)";
+                InsertBugRecord(txtCodeNew.Text, comboBoxLanguage.SelectedItem.ToString(), bugCommandString);
 
                 //Gets 'BugId' from latest users submission (above), this way is used because database could theoretically be used simultaneously where consecutive IDs could be mismatched between users.
                 String selBugIdCommand = "SELECT TOP 1 BugId FROM BugTable WHERE Username = '" + GraphicalLanguageTool.Login.sessionUsername +"' ORDER BY BugId DESC";
                 SqlCommand sqlBugIdCommand = new SqlCommand(selBugIdCommand, newBugConnection);
-
+               
                 SqlDataReader bugIdSqlDataReader = sqlBugIdCommand.ExecuteReader();
-
+ sqlBugIdCommand.Connection = newBugConnection;
                 int bugId =0;   //Obligatory value assigned.
                 while (bugIdSqlDataReader.Read())
                 {
@@ -154,6 +144,11 @@ namespace GraphicalLanguageTool
                 newBugConnection.Close();
                 this.Close();
             }  
+        }
+
+        private void InsertBugRecord(string text, string v, string bugCommandString)
+        {
+          
         }
 
         /// <summary>
