@@ -60,35 +60,14 @@ namespace GraphicalLanguageTool
             this.HELP = new System.Windows.Forms.ToolStripMenuItem();
             this.ABOUT = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.LBINPUT = new System.Windows.Forms.ListBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.SYMPTOMTXT = new System.Windows.Forms.TextBox();
-            this.CAUSETXT = new System.Windows.Forms.TextBox();
-            this.TXTLANG = new System.Windows.Forms.TextBox();
-            this.METHODTXT = new System.Windows.Forms.TextBox();
-            this.CLASSTXT = new System.Windows.Forms.TextBox();
-            this.LNETXT = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.LNSTXT = new System.Windows.Forms.TextBox();
-            this.APPTXT = new System.Windows.Forms.TextBox();
-            this.LH1 = new System.Windows.Forms.Label();
-            this.LBLANG = new System.Windows.Forms.Label();
-            this.BUGIDTXT = new System.Windows.Forms.TextBox();
-            this.LBEND = new System.Windows.Forms.Label();
-            this.LBLT = new System.Windows.Forms.Label();
-            this.LBSTART = new System.Windows.Forms.Label();
-            this.BUGID = new System.Windows.Forms.Label();
-            this.LBCAUSE = new System.Windows.Forms.Label();
-            this.LBAPP = new System.Windows.Forms.Label();
-            this.LBSYMPTOM = new System.Windows.Forms.Label();
-            this.LBMETHOD = new System.Windows.Forms.Label();
-            this.LBCLASS = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.selectionifpanel = new System.Windows.Forms.Panel();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.selectionelsepanel = new System.Windows.Forms.Panel();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -100,7 +79,6 @@ namespace GraphicalLanguageTool
             this.LBUSERNAME = new System.Windows.Forms.Label();
             this.MS1.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.selectionifpanel.SuspendLayout();
             this.selectionelsepanel.SuspendLayout();
@@ -118,7 +96,7 @@ namespace GraphicalLanguageTool
             this.txtCode.Margin = new System.Windows.Forms.Padding(0);
             this.txtCode.MinimumSize = new System.Drawing.Size(100, 300);
             this.txtCode.Name = "txtCode";
-            this.txtCode.Size = new System.Drawing.Size(1321, 401);
+            this.txtCode.Size = new System.Drawing.Size(1134, 401);
             this.txtCode.TabIndex = 24;
             this.txtCode.Load += new System.EventHandler(this.TxtCode_Load);
             // 
@@ -134,7 +112,7 @@ namespace GraphicalLanguageTool
             this.HELP});
             this.MS1.Location = new System.Drawing.Point(0, 0);
             this.MS1.Name = "MS1";
-            this.MS1.Size = new System.Drawing.Size(1321, 24);
+            this.MS1.Size = new System.Drawing.Size(1134, 24);
             this.MS1.TabIndex = 25;
             this.MS1.Text = "MS1";
             this.MS1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.MS1_ItemClicked);
@@ -328,7 +306,6 @@ namespace GraphicalLanguageTool
             // 
             this.panel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.panel1.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.panel1.Controls.Add(this.LBINPUT);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
@@ -339,276 +316,13 @@ namespace GraphicalLanguageTool
             this.panel1.Size = new System.Drawing.Size(1148, 303);
             this.panel1.TabIndex = 27;
             // 
-            // LBINPUT
-            // 
-            this.LBINPUT.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.LBINPUT.BackColor = System.Drawing.SystemColors.Window;
-            this.LBINPUT.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.LBINPUT.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBINPUT.FormattingEnabled = true;
-            this.LBINPUT.ItemHeight = 15;
-            this.LBINPUT.Location = new System.Drawing.Point(666, 33);
-            this.LBINPUT.Margin = new System.Windows.Forms.Padding(0);
-            this.LBINPUT.MaximumSize = new System.Drawing.Size(485, 242);
-            this.LBINPUT.MinimumSize = new System.Drawing.Size(300, 210);
-            this.LBINPUT.Name = "LBINPUT";
-            this.LBINPUT.ScrollAlwaysVisible = true;
-            this.LBINPUT.Size = new System.Drawing.Size(466, 242);
-            this.LBINPUT.TabIndex = 1;
-            this.LBINPUT.Tag = "";
-            this.LBINPUT.SelectedIndexChanged += new System.EventHandler(this.ListBoxInput_SelectedIndexChanged);
-            // 
             // panel3
             // 
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel3.Controls.Add(this.SYMPTOMTXT);
-            this.panel3.Controls.Add(this.CAUSETXT);
-            this.panel3.Controls.Add(this.TXTLANG);
-            this.panel3.Controls.Add(this.METHODTXT);
-            this.panel3.Controls.Add(this.CLASSTXT);
-            this.panel3.Controls.Add(this.LNETXT);
-            this.panel3.Controls.Add(this.label1);
-            this.panel3.Controls.Add(this.LNSTXT);
-            this.panel3.Controls.Add(this.APPTXT);
-            this.panel3.Controls.Add(this.LH1);
-            this.panel3.Controls.Add(this.LBLANG);
-            this.panel3.Controls.Add(this.BUGIDTXT);
-            this.panel3.Controls.Add(this.LBEND);
-            this.panel3.Controls.Add(this.LBLT);
-            this.panel3.Controls.Add(this.LBSTART);
-            this.panel3.Controls.Add(this.BUGID);
-            this.panel3.Controls.Add(this.LBCAUSE);
-            this.panel3.Controls.Add(this.LBAPP);
-            this.panel3.Controls.Add(this.LBSYMPTOM);
-            this.panel3.Controls.Add(this.LBMETHOD);
-            this.panel3.Controls.Add(this.LBCLASS);
             this.panel3.Location = new System.Drawing.Point(653, 0);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(492, 290);
             this.panel3.TabIndex = 30;
-            // 
-            // SYMPTOMTXT
-            // 
-            this.SYMPTOMTXT.BackColor = System.Drawing.SystemColors.Control;
-            this.SYMPTOMTXT.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.SYMPTOMTXT.Location = new System.Drawing.Point(12, 117);
-            this.SYMPTOMTXT.Name = "SYMPTOMTXT";
-            this.SYMPTOMTXT.ReadOnly = true;
-            this.SYMPTOMTXT.Size = new System.Drawing.Size(520, 13);
-            this.SYMPTOMTXT.TabIndex = 10;
-            // 
-            // CAUSETXT
-            // 
-            this.CAUSETXT.BackColor = System.Drawing.SystemColors.Control;
-            this.CAUSETXT.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.CAUSETXT.Location = new System.Drawing.Point(95, 144);
-            this.CAUSETXT.Name = "CAUSETXT";
-            this.CAUSETXT.ReadOnly = true;
-            this.CAUSETXT.Size = new System.Drawing.Size(222, 13);
-            this.CAUSETXT.TabIndex = 11;
-            // 
-            // TXTLANG
-            // 
-            this.TXTLANG.BackColor = System.Drawing.SystemColors.Control;
-            this.TXTLANG.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TXTLANG.Location = new System.Drawing.Point(54, 77);
-            this.TXTLANG.Name = "TXTLANG";
-            this.TXTLANG.ReadOnly = true;
-            this.TXTLANG.Size = new System.Drawing.Size(219, 13);
-            this.TXTLANG.TabIndex = 28;
-            this.TXTLANG.TextChanged += new System.EventHandler(this.txtLanguage_TextChanged);
-            // 
-            // METHODTXT
-            // 
-            this.METHODTXT.BackColor = System.Drawing.SystemColors.Control;
-            this.METHODTXT.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.METHODTXT.Location = new System.Drawing.Point(85, 163);
-            this.METHODTXT.Name = "METHODTXT";
-            this.METHODTXT.ReadOnly = true;
-            this.METHODTXT.Size = new System.Drawing.Size(393, 13);
-            this.METHODTXT.TabIndex = 13;
-            // 
-            // CLASSTXT
-            // 
-            this.CLASSTXT.BackColor = System.Drawing.SystemColors.Control;
-            this.CLASSTXT.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.CLASSTXT.Location = new System.Drawing.Point(54, 162);
-            this.CLASSTXT.Name = "CLASSTXT";
-            this.CLASSTXT.ReadOnly = true;
-            this.CLASSTXT.Size = new System.Drawing.Size(463, 13);
-            this.CLASSTXT.TabIndex = 12;
-            // 
-            // LNETXT
-            // 
-            this.LNETXT.BackColor = System.Drawing.SystemColors.Control;
-            this.LNETXT.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.LNETXT.Location = new System.Drawing.Point(54, 153);
-            this.LNETXT.Name = "LNETXT";
-            this.LNETXT.ReadOnly = true;
-            this.LNETXT.Size = new System.Drawing.Size(40, 13);
-            this.LNETXT.TabIndex = 15;
-            this.LNETXT.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.LNETXT.TextChanged += new System.EventHandler(this.txtLineNoEnd_TextChanged);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(189, 4);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(101, 25);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Audit List:";
-            // 
-            // LNSTXT
-            // 
-            this.LNSTXT.BackColor = System.Drawing.SystemColors.Control;
-            this.LNSTXT.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.LNSTXT.Location = new System.Drawing.Point(95, 143);
-            this.LNSTXT.Name = "LNSTXT";
-            this.LNSTXT.ReadOnly = true;
-            this.LNSTXT.Size = new System.Drawing.Size(40, 13);
-            this.LNSTXT.TabIndex = 14;
-            this.LNSTXT.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.LNSTXT.TextChanged += new System.EventHandler(this.txtLineNoStart_TextChanged);
-            // 
-            // APPTXT
-            // 
-            this.APPTXT.BackColor = System.Drawing.SystemColors.Control;
-            this.APPTXT.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.APPTXT.Location = new System.Drawing.Point(54, 121);
-            this.APPTXT.Name = "APPTXT";
-            this.APPTXT.ReadOnly = true;
-            this.APPTXT.Size = new System.Drawing.Size(208, 13);
-            this.APPTXT.TabIndex = 4;
-            // 
-            // LH1
-            // 
-            this.LH1.AutoSize = true;
-            this.LH1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LH1.Location = new System.Drawing.Point(245, 179);
-            this.LH1.Name = "LH1";
-            this.LH1.Size = new System.Drawing.Size(11, 15);
-            this.LH1.TabIndex = 26;
-            this.LH1.Text = "-";
-            this.LH1.Click += new System.EventHandler(this.labelHyphen1_Click);
-            // 
-            // LBLANG
-            // 
-            this.LBLANG.AutoSize = true;
-            this.LBLANG.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBLANG.ForeColor = System.Drawing.Color.Black;
-            this.LBLANG.Location = new System.Drawing.Point(179, 150);
-            this.LBLANG.Name = "LBLANG";
-            this.LBLANG.Size = new System.Drawing.Size(68, 17);
-            this.LBLANG.TabIndex = 27;
-            this.LBLANG.Text = "Language";
-            // 
-            // BUGIDTXT
-            // 
-            this.BUGIDTXT.BackColor = System.Drawing.SystemColors.Control;
-            this.BUGIDTXT.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.BUGIDTXT.Location = new System.Drawing.Point(108, 58);
-            this.BUGIDTXT.Name = "BUGIDTXT";
-            this.BUGIDTXT.ReadOnly = true;
-            this.BUGIDTXT.Size = new System.Drawing.Size(121, 13);
-            this.BUGIDTXT.TabIndex = 2;
-            // 
-            // LBEND
-            // 
-            this.LBEND.AutoSize = true;
-            this.LBEND.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBEND.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.LBEND.Location = new System.Drawing.Point(223, 207);
-            this.LBEND.Name = "LBEND";
-            this.LBEND.Size = new System.Drawing.Size(24, 13);
-            this.LBEND.TabIndex = 19;
-            this.LBEND.Text = "End";
-            this.LBEND.Click += new System.EventHandler(this.labelLineNoEnd_Click);
-            // 
-            // LBLT
-            // 
-            this.LBLT.AutoSize = true;
-            this.LBLT.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBLT.ForeColor = System.Drawing.Color.Black;
-            this.LBLT.Location = new System.Drawing.Point(51, 179);
-            this.LBLT.Name = "LBLT";
-            this.LBLT.Size = new System.Drawing.Size(88, 17);
-            this.LBLT.TabIndex = 22;
-            this.LBLT.Text = "Line Number";
-            this.LBLT.Click += new System.EventHandler(this.labelLineTitle_Click);
-            // 
-            // LBSTART
-            // 
-            this.LBSTART.AutoSize = true;
-            this.LBSTART.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBSTART.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.LBSTART.Location = new System.Drawing.Point(105, 223);
-            this.LBSTART.Name = "LBSTART";
-            this.LBSTART.Size = new System.Drawing.Size(30, 13);
-            this.LBSTART.TabIndex = 18;
-            this.LBSTART.Text = "Start";
-            // 
-            // BUGID
-            // 
-            this.BUGID.AutoSize = true;
-            this.BUGID.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BUGID.Location = new System.Drawing.Point(179, 133);
-            this.BUGID.Name = "BUGID";
-            this.BUGID.Size = new System.Drawing.Size(50, 17);
-            this.BUGID.TabIndex = 5;
-            this.BUGID.Text = "Bug ID";
-            // 
-            // LBCAUSE
-            // 
-            this.LBCAUSE.AutoSize = true;
-            this.LBCAUSE.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBCAUSE.Location = new System.Drawing.Point(105, 150);
-            this.LBCAUSE.Name = "LBCAUSE";
-            this.LBCAUSE.Size = new System.Drawing.Size(44, 17);
-            this.LBCAUSE.TabIndex = 21;
-            this.LBCAUSE.Text = "Cause";
-            // 
-            // LBAPP
-            // 
-            this.LBAPP.AutoSize = true;
-            this.LBAPP.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBAPP.Location = new System.Drawing.Point(120, 150);
-            this.LBAPP.Name = "LBAPP";
-            this.LBAPP.Size = new System.Drawing.Size(79, 17);
-            this.LBAPP.TabIndex = 7;
-            this.LBAPP.Text = "Application";
-            // 
-            // LBSYMPTOM
-            // 
-            this.LBSYMPTOM.AutoSize = true;
-            this.LBSYMPTOM.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBSYMPTOM.Location = new System.Drawing.Point(145, 179);
-            this.LBSYMPTOM.Name = "LBSYMPTOM";
-            this.LBSYMPTOM.Size = new System.Drawing.Size(67, 17);
-            this.LBSYMPTOM.TabIndex = 20;
-            this.LBSYMPTOM.Text = "Symptom";
-            // 
-            // LBMETHOD
-            // 
-            this.LBMETHOD.AutoSize = true;
-            this.LBMETHOD.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBMETHOD.Location = new System.Drawing.Point(105, 117);
-            this.LBMETHOD.Name = "LBMETHOD";
-            this.LBMETHOD.Size = new System.Drawing.Size(56, 17);
-            this.LBMETHOD.TabIndex = 17;
-            this.LBMETHOD.Text = "Method";
-            // 
-            // LBCLASS
-            // 
-            this.LBCLASS.AutoSize = true;
-            this.LBCLASS.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBCLASS.Location = new System.Drawing.Point(145, 133);
-            this.LBCLASS.Name = "LBCLASS";
-            this.LBCLASS.Size = new System.Drawing.Size(39, 17);
-            this.LBCLASS.TabIndex = 16;
-            this.LBCLASS.Text = "Class";
             // 
             // panel4
             // 
@@ -666,12 +380,22 @@ namespace GraphicalLanguageTool
             // 
             // panel5
             // 
+            this.panel5.Controls.Add(this.button2);
             this.panel5.Controls.Add(this.label5);
             this.panel5.Location = new System.Drawing.Point(0, 0);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(601, 286);
             this.panel5.TabIndex = 3;
             this.panel5.Visible = false;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(491, 196);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 2;
+            this.button2.Text = "button2";
+            this.button2.UseVisualStyleBackColor = true;
             // 
             // label5
             // 
@@ -709,6 +433,7 @@ namespace GraphicalLanguageTool
             this.BF.Text = "Change";
             this.TTF.SetToolTip(this.BF, "Only source code creator may change \'Fixed\' status of bug.");
             this.BF.UseVisualStyleBackColor = true;
+            this.BF.Visible = false;
             this.BF.Click += new System.EventHandler(this.ButtonFix_Click);
             // 
             // panel2
@@ -719,7 +444,7 @@ namespace GraphicalLanguageTool
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.LF);
             this.panel2.Controls.Add(this.BF);
-            this.panel2.Location = new System.Drawing.Point(1154, 24);
+            this.panel2.Location = new System.Drawing.Point(967, 24);
             this.panel2.MaximumSize = new System.Drawing.Size(500, 500);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(155, 290);
@@ -739,13 +464,14 @@ namespace GraphicalLanguageTool
             this.LF.Text = "Unfixed";
             this.LF.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.TTF.SetToolTip(this.LF, "Only source code creator may change \'Fixed\' status of bug.");
+            this.LF.Visible = false;
             // 
             // USERNAMETXT
             // 
             this.USERNAMETXT.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.USERNAMETXT.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.USERNAMETXT.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.USERNAMETXT.Location = new System.Drawing.Point(467, 6);
+            this.USERNAMETXT.Location = new System.Drawing.Point(680, 5);
             this.USERNAMETXT.Name = "USERNAMETXT";
             this.USERNAMETXT.ReadOnly = true;
             this.USERNAMETXT.Size = new System.Drawing.Size(110, 16);
@@ -767,7 +493,7 @@ namespace GraphicalLanguageTool
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Indigo;
-            this.ClientSize = new System.Drawing.Size(1321, 728);
+            this.ClientSize = new System.Drawing.Size(1134, 728);
             this.Controls.Add(this.USERNAMETXT);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.LBUSERNAME);
@@ -784,8 +510,6 @@ namespace GraphicalLanguageTool
             this.MS1.ResumeLayout(false);
             this.MS1.PerformLayout();
             this.panel1.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.selectionifpanel.ResumeLayout(false);
             this.selectionifpanel.PerformLayout();
@@ -841,37 +565,16 @@ namespace GraphicalLanguageTool
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel selectionelsepanel;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ToolStripMenuItem button1;
-        private System.Windows.Forms.ListBox LBINPUT;
-        private System.Windows.Forms.TextBox SYMPTOMTXT;
-        private System.Windows.Forms.TextBox CAUSETXT;
-        private System.Windows.Forms.TextBox TXTLANG;
-        private System.Windows.Forms.TextBox METHODTXT;
-        private System.Windows.Forms.TextBox CLASSTXT;
-        private System.Windows.Forms.TextBox LNETXT;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox LNSTXT;
-        private System.Windows.Forms.TextBox APPTXT;
-        private System.Windows.Forms.Label LH1;
-        private System.Windows.Forms.Label LBLANG;
-        private System.Windows.Forms.TextBox BUGIDTXT;
-        private System.Windows.Forms.Label LBEND;
-        private System.Windows.Forms.Label LBLT;
-        private System.Windows.Forms.Label LBSTART;
-        private System.Windows.Forms.Label BUGID;
-        private System.Windows.Forms.Label LBCAUSE;
-        private System.Windows.Forms.Label LBAPP;
-        private System.Windows.Forms.Label LBSYMPTOM;
-        private System.Windows.Forms.Label LBMETHOD;
-        private System.Windows.Forms.Label LBCLASS;
         private System.Windows.Forms.TextBox LF;
         private System.Windows.Forms.TextBox USERNAMETXT;
         private System.Windows.Forms.Label LBUSERNAME;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button button2;
     }
 }
 

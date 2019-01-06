@@ -37,13 +37,10 @@ namespace GraphicalLanguageTool
         public void Session()
         {
             USERNAMETXT.Text = Login.sessionUsername;       //Username text field assigned value of current sessions 'Username' from Login form.
-            BUGIDTXT.Text = OpenBug.sessionOpenBug;         //Bug ID text field assigned value of current sessions 'BugID' from OpenBug form.
+            
             BF.Enabled = false;                      //Change 'Fixed' status of bug button set to disabled by default, enabled later under conditions.
             SUBMIT.Enabled = false;   //'Submit' menu item set to disabled by default, enabled later under conditions.
-            if (BUGIDTXT.Text != "")
-            {
-                Populate();
-            }
+           
         }
 
         /// <summary>
@@ -54,7 +51,7 @@ namespace GraphicalLanguageTool
             mainConnection = new SqlConnection
                 (@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename = 
                 |DataDirectory|\ASEABugTrackDB.mdf;");
-            String selBugCommand = "SELECT Username, Application, Symptom, Cause, Class, Method, CodeBlock, LineNoStart, LineNoEnd, Language, Fixed FROM BugTable WHERE BugId = " + BUGIDTXT.Text;  //Only selects row of data for the currently loaded bug session.
+            String selBugCommand = "SELECT Username, Application, Symptom, Cause, Class, Method, CodeBlock, LineNoStart, LineNoEnd, Language, Fixed FROM BugTable WHERE BugId = ";  //Only selects row of data for the currently loaded bug session.
             SqlCommand sqlBugCommand = new SqlCommand(selBugCommand, mainConnection);
             
             try
@@ -65,36 +62,22 @@ namespace GraphicalLanguageTool
                 {
                     if (bugSqlDataReader.GetString(0) == Login.sessionUsername) { BF.Enabled = true; }
                     else if (bugSqlDataReader.GetString(0) != Login.sessionUsername) { BF.Enabled = false; }
-                    APPTXT.Text = bugSqlDataReader.GetString(1);
-                    SYMPTOMTXT.Text = bugSqlDataReader.GetString(2);
-                    CAUSETXT.Text = bugSqlDataReader.GetString(3);
-                    CLASSTXT.Text = bugSqlDataReader.GetString(4);
-                    METHODTXT.Text = bugSqlDataReader.GetString(5);
+                   
                     txtCode.Text = bugSqlDataReader.GetString(6);
-                    LNSTXT.Text = bugSqlDataReader.GetInt32(7).ToString();
-                    LNETXT.Text = bugSqlDataReader.GetInt32(8).ToString();
-                    TXTLANG.Text = bugSqlDataReader.GetString(9);
+                   
                     if (bugSqlDataReader.GetBoolean(10) == false) { LF.Text = "Unfixed"; SUBMIT.Enabled = true; }
                     else if (bugSqlDataReader.GetBoolean(10) == true) { LF.Text = "Fixed"; SUBMIT.Enabled = false;  }
                 }
 
-                String selVerCommand = "SELECT EntryNo, Username, EntryDateTime FROM VersionTable WHERE BugId = " + BUGIDTXT.Text; //Only selects rows (versions) of the bug for are linked to the original bug using the 'BugId'.
+                String selVerCommand = "SELECT EntryNo, Username, EntryDateTime FROM VersionTable WHERE BugId = "; //Only selects rows (versions) of the bug for are linked to the original bug using the 'BugId'.
                 SqlCommand sqlVerCommand = new SqlCommand(selVerCommand, mainConnection);
 
                 bugSqlDataReader.Close();
 
                 SqlDataReader verSqlDataReader = sqlVerCommand.ExecuteReader();
-                LBINPUT.Items.Clear();
+                
 
-                while (verSqlDataReader.Read())
-                {
-                    if (verSqlDataReader.GetInt32(0)==0) { LBINPUT.Items.Add(
-                        "[source_code] created by " + verSqlDataReader["Username"] + " on " + verSqlDataReader["EntryDateTime"]);}              //First index (0) always original version of code.
-                    else {LBINPUT.Items.Add(
-                        "[" + BUGIDTXT.Text + "." + verSqlDataReader["EntryNo"] + "] created by " + verSqlDataReader["Username"]                //Later versions of code (1+) show entry number.    
-                        + " on " + verSqlDataReader["EntryDateTime"]);}                   
-                }
-                verSqlDataReader.Close();
+                
             }
 
             catch (SqlException ex)
@@ -180,7 +163,7 @@ namespace GraphicalLanguageTool
         /// </summary>
         private void TxtCode_Load(object sender, EventArgs e)
         {
-            language = TXTLANG.Text;
+            language =Text;
             String dir = Application.StartupPath;
             FileSyntaxModeProvider fsmp;
             if (Directory.Exists(dir))
@@ -239,7 +222,7 @@ namespace GraphicalLanguageTool
             mainConnection = new SqlConnection
                 (@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename = 
                 |DataDirectory|\ASEABugTrackDB.mdf;");
-            String selCodeCommand = "SELECT AlteredCode FROM VersionTable WHERE EntryNo = " + LBINPUT.SelectedIndex + "AND BugId =" + OpenBug.sessionOpenBug;      //Selects the version selected from the list of the opened bug's versions.
+            String selCodeCommand = "SELECT AlteredCode FROM VersionTable WHERE EntryNo = " +  "AND BugId =" + OpenBug.sessionOpenBug;      //Selects the version selected from the list of the opened bug's versions.
             SqlCommand sqlCodeCommand = new SqlCommand(selCodeCommand, mainConnection);
 
             try
@@ -269,7 +252,7 @@ namespace GraphicalLanguageTool
             if (CheckInput())
             {
                 String commandString = "INSERT INTO VersionTable(EntryDateTime, AlteredCode, Username, BugId, EntryNo) VALUES (@EntryDateTime, @AlteredCode, @Username, @BugId, @EntryNo)";
-                InsertRecord(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff"), txtCode.Text, Login.sessionUsername, BUGIDTXT.Text, LBINPUT.Items.Count.ToString(), commandString);
+               
                 Populate();
             }
         }
@@ -287,7 +270,7 @@ namespace GraphicalLanguageTool
                 if (dialogResult == DialogResult.Yes)
                 {
                     SUBMIT.Enabled = false;
-                    String commandFixed = "UPDATE BugTable SET Fixed = 1 WHERE BugId = " + BUGIDTXT.Text;    
+                    String commandFixed = "UPDATE BugTable SET Fixed = 1 WHERE BugId = " + Text;    
                     InsertFixRecord(true, commandFixed);                                                        //Updates database record of just the current bug's status to 'Fixed'
                     LF.Text = "Fixed";                                                                    //along with label to display on the form.
                 }
@@ -302,7 +285,7 @@ namespace GraphicalLanguageTool
                 if (dialogResult == DialogResult.Yes)
                 {
                     SUBMIT.Enabled = true;
-                    String commandFixed = "UPDATE BugTable SET Fixed = 0 WHERE BugId = " + BUGIDTXT.Text;      
+                    String commandFixed = "UPDATE BugTable SET Fixed = 0 WHERE BugId = " + Text;      
                     InsertFixRecord(false, commandFixed);                                                       //Updates database record of just the current bug's status to 'Unfixed'.
                     LF.Text = "Unfixed";                                                                  //along with label to display on the form.
                 }
@@ -410,5 +393,13 @@ namespace GraphicalLanguageTool
                 commandline.Show(); // or somename.ShowDialog(); if you want the new form to have priority until it is closed
             
         }
+
+        Panel aspPanel = new Panel();
+        Button aspbutton = new Button();
+        
+
+        
+     
     }
+
 }
