@@ -388,11 +388,20 @@ namespace GraphicalLanguageTool
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
        
-            Form1 paint = new Form1();
-            paint.Show(); // or somename.ShowDialog(); if you want the new form to have priority until it is closed
-}
+
+        private void toolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            Form1 frm = new Form1();
+
+            frm.Show();
+        }
+
+        private void toolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+          
+
+           
+        }
     }
 }
