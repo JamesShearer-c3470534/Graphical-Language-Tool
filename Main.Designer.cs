@@ -55,8 +55,13 @@ namespace GraphicalLanguageTool
             this.toolStripMenuItem9 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem10 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem11 = new System.Windows.Forms.ToolStripMenuItem();
+<<<<<<< HEAD
             this.button1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+=======
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+>>>>>>> bfa5cdce0a097982385df5656acf262ba42916a7
             this.HELP = new System.Windows.Forms.ToolStripMenuItem();
             this.ABOUT = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem12 = new System.Windows.Forms.ToolStripMenuItem();
@@ -68,7 +73,10 @@ namespace GraphicalLanguageTool
             this.selectionelsepanel = new System.Windows.Forms.Panel();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.panel5 = new System.Windows.Forms.Panel();
+<<<<<<< HEAD
             this.button2 = new System.Windows.Forms.Button();
+=======
+>>>>>>> bfa5cdce0a097982385df5656acf262ba42916a7
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -76,8 +84,11 @@ namespace GraphicalLanguageTool
             this.panel2 = new System.Windows.Forms.Panel();
             this.LF = new System.Windows.Forms.TextBox();
             this.TTF = new System.Windows.Forms.ToolTip(this.components);
+<<<<<<< HEAD
             this.USERNAMETXT = new System.Windows.Forms.TextBox();
             this.LBUSERNAME = new System.Windows.Forms.Label();
+=======
+>>>>>>> bfa5cdce0a097982385df5656acf262ba42916a7
             this.MS1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -108,9 +119,14 @@ namespace GraphicalLanguageTool
             this.Iteration,
             this.toolStripMenuItem7,
             this.toolStripMenuItem11,
+<<<<<<< HEAD
             this.button1,
             this.toolStripMenuItem2,
             this.toolStripMenuItem12,
+=======
+            this.toolStripMenuItem2,
+            this.toolStripMenuItem3,
+>>>>>>> bfa5cdce0a097982385df5656acf262ba42916a7
             this.HELP});
             this.MS1.Location = new System.Drawing.Point(0, 0);
             this.MS1.Name = "MS1";
@@ -275,6 +291,7 @@ namespace GraphicalLanguageTool
             this.toolStripMenuItem11.Size = new System.Drawing.Size(70, 20);
             this.toolStripMenuItem11.Text = "Sequence";
             // 
+<<<<<<< HEAD
             // button1
             // 
             this.button1.Name = "button1";
@@ -289,6 +306,22 @@ namespace GraphicalLanguageTool
             this.toolStripMenuItem2.Text = "Command Line";
             this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
             // 
+=======
+            // toolStripMenuItem2
+            // 
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(72, 20);
+            this.toolStripMenuItem2.Text = "Paint Tool";
+            this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
+            // 
+            // toolStripMenuItem3
+            // 
+            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(101, 20);
+            this.toolStripMenuItem3.Text = "Command Line";
+            this.toolStripMenuItem3.Click += new System.EventHandler(this.toolStripMenuItem3_Click);
+            // 
+>>>>>>> bfa5cdce0a097982385df5656acf262ba42916a7
             // HELP
             // 
             this.HELP.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -389,7 +422,10 @@ namespace GraphicalLanguageTool
             // 
             // panel5
             // 
+<<<<<<< HEAD
             this.panel5.Controls.Add(this.button2);
+=======
+>>>>>>> bfa5cdce0a097982385df5656acf262ba42916a7
             this.panel5.Controls.Add(this.label5);
             this.panel5.Location = new System.Drawing.Point(0, 0);
             this.panel5.Name = "panel5";
@@ -397,6 +433,7 @@ namespace GraphicalLanguageTool
             this.panel5.TabIndex = 3;
             this.panel5.Visible = false;
             // 
+<<<<<<< HEAD
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(491, 196);
@@ -406,6 +443,8 @@ namespace GraphicalLanguageTool
             this.button2.Text = "button2";
             this.button2.UseVisualStyleBackColor = true;
             // 
+=======
+>>>>>>> bfa5cdce0a097982385df5656acf262ba42916a7
             // label5
             // 
             this.label5.AutoSize = true;
@@ -475,6 +514,7 @@ namespace GraphicalLanguageTool
             this.TTF.SetToolTip(this.LF, "Only source code creator may change \'Fixed\' status of bug.");
             this.LF.Visible = false;
             // 
+<<<<<<< HEAD
             // USERNAMETXT
             // 
             this.USERNAMETXT.BackColor = System.Drawing.SystemColors.ControlLightLight;
@@ -498,13 +538,20 @@ namespace GraphicalLanguageTool
             this.LBUSERNAME.TabIndex = 6;
             this.LBUSERNAME.Text = "Logged in as:";
             // 
+=======
+>>>>>>> bfa5cdce0a097982385df5656acf262ba42916a7
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+<<<<<<< HEAD
             this.BackColor = System.Drawing.Color.Indigo;
             this.ClientSize = new System.Drawing.Size(1134, 728);
             this.Controls.Add(this.USERNAMETXT);
+=======
+            this.BackColor = System.Drawing.Color.Navy;
+            this.ClientSize = new System.Drawing.Size(1321, 728);
+>>>>>>> bfa5cdce0a097982385df5656acf262ba42916a7
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.LBUSERNAME);
             this.Controls.Add(this.panel1);
@@ -534,10 +581,14 @@ namespace GraphicalLanguageTool
 
         }
 
+<<<<<<< HEAD
         private void button1_Click(object sender, EventArgs e)
         {
             throw new NotImplementedException();
         }
+=======
+       
+>>>>>>> bfa5cdce0a097982385df5656acf262ba42916a7
 
         #endregion
         private ICSharpCode.TextEditor.TextEditorControl txtCode;
@@ -578,6 +629,7 @@ namespace GraphicalLanguageTool
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label5;
+<<<<<<< HEAD
         private System.Windows.Forms.ToolStripMenuItem button1;
         private System.Windows.Forms.TextBox LF;
         private System.Windows.Forms.TextBox USERNAMETXT;
@@ -586,6 +638,10 @@ namespace GraphicalLanguageTool
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem12;
+=======
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
+>>>>>>> bfa5cdce0a097982385df5656acf262ba42916a7
     }
 }
 

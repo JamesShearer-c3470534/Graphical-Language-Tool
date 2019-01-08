@@ -383,6 +383,7 @@ namespace GraphicalLanguageTool
 
         }
 
+<<<<<<< HEAD
        
             
 
@@ -440,6 +441,23 @@ namespace GraphicalLanguageTool
             j.Start();
         }
        
+=======
+       
+
+        private void toolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            Form1 frm = new Form1();
+
+            frm.Show();
+        }
+
+        private void toolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+          
+
+           
+        }
+>>>>>>> bfa5cdce0a097982385df5656acf262ba42916a7
     }
 
 }
