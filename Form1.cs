@@ -47,16 +47,9 @@ namespace TestCommandLine
 			}
 		}
 
-<<<<<<< HEAD
 		private void btnClose_Click(object sender, EventArgs e)
 		{
 			Close();
 		}
 	}
-=======
-       
-
-        
-    }
->>>>>>> bfa5cdce0a097982385df5656acf262ba42916a7
 }

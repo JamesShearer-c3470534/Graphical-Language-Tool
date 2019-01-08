@@ -27,3 +27,11 @@ C:\Users\james\Downloads\ASEA2-master\ASEABugTracker\obj\Debug\ASEABugTracker.cs
 C:\Users\james\Downloads\ASEA2-master\ASEABugTracker\obj\Debug\ASEABugTracker.csproj.CopyComplete
 C:\Users\james\Downloads\ASEA2-master\ASEABugTracker\obj\Debug\ASEABugTracker.exe
 C:\Users\james\Downloads\ASEA2-master\ASEABugTracker\obj\Debug\ASEABugTracker.pdb
+C:\Users\aali\Downloads\GitHub\Graphical-Language-Tool\obj\Debug\ASEABugTracker.csprojAssemblyReference.cache
+C:\Users\aali\Downloads\GitHub\Graphical-Language-Tool\obj\Debug\GraphicalLanguageTool.NewBugForm.resources
+C:\Users\aali\Downloads\GitHub\Graphical-Language-Tool\obj\Debug\GraphicalLanguageTool.Login.resources
+C:\Users\aali\Downloads\GitHub\Graphical-Language-Tool\obj\Debug\GraphicalLanguageTool.Main.resources
+C:\Users\aali\Downloads\GitHub\Graphical-Language-Tool\obj\Debug\GraphicalLanguageTool.OpenBug.resources
+C:\Users\aali\Downloads\GitHub\Graphical-Language-Tool\obj\Debug\ASEABugTracker.Properties.Resources.resources
+C:\Users\aali\Downloads\GitHub\Graphical-Language-Tool\obj\Debug\ASEABugTracker.csproj.GenerateResource.cache
+C:\Users\aali\Downloads\GitHub\Graphical-Language-Tool\obj\Debug\ASEABugTracker.csproj.CoreCompileInputs.cache
