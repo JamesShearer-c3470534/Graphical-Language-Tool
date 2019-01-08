@@ -59,6 +59,7 @@ namespace GraphicalLanguageTool
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.HELP = new System.Windows.Forms.ToolStripMenuItem();
             this.ABOUT = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem12 = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -109,6 +110,7 @@ namespace GraphicalLanguageTool
             this.toolStripMenuItem11,
             this.button1,
             this.toolStripMenuItem2,
+            this.toolStripMenuItem12,
             this.HELP});
             this.MS1.Location = new System.Drawing.Point(0, 0);
             this.MS1.Name = "MS1";
@@ -302,6 +304,13 @@ namespace GraphicalLanguageTool
             this.ABOUT.Text = "About";
             this.ABOUT.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
+            // toolStripMenuItem12
+            // 
+            this.toolStripMenuItem12.Name = "toolStripMenuItem12";
+            this.toolStripMenuItem12.Size = new System.Drawing.Size(135, 20);
+            this.toolStripMenuItem12.Text = "Factory Class example";
+            this.toolStripMenuItem12.Click += new System.EventHandler(this.toolStripMenuItem12_Click);
+            // 
             // panel1
             // 
             this.panel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
@@ -471,18 +480,19 @@ namespace GraphicalLanguageTool
             this.USERNAMETXT.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.USERNAMETXT.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.USERNAMETXT.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.USERNAMETXT.Location = new System.Drawing.Point(680, 5);
+            this.USERNAMETXT.Location = new System.Drawing.Point(1012, 4);
             this.USERNAMETXT.Name = "USERNAMETXT";
             this.USERNAMETXT.ReadOnly = true;
             this.USERNAMETXT.Size = new System.Drawing.Size(110, 16);
             this.USERNAMETXT.TabIndex = 3;
+            this.USERNAMETXT.TextChanged += new System.EventHandler(this.USERNAMETXT_TextChanged);
             // 
             // LBUSERNAME
             // 
             this.LBUSERNAME.AutoSize = true;
             this.LBUSERNAME.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.LBUSERNAME.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBUSERNAME.Location = new System.Drawing.Point(583, 4);
+            this.LBUSERNAME.Location = new System.Drawing.Point(915, 2);
             this.LBUSERNAME.Name = "LBUSERNAME";
             this.LBUSERNAME.Size = new System.Drawing.Size(91, 17);
             this.LBUSERNAME.TabIndex = 6;
@@ -575,6 +585,7 @@ namespace GraphicalLanguageTool
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem12;
     }
 }
 

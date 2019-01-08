@@ -1,6 +1,6 @@
 ﻿namespace GraphicalLanguageTool
 {
-    partial class Form2
+    partial class Form22
     {
         /// <summary>
         /// Required designer variable.
@@ -217,6 +217,7 @@
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.btn_PenColor);
             this.panel2.Controls.Add(this.cmb_PenSize);
+            this.panel2.Controls.Add(this.cmb_ammount);
             this.panel2.Location = new System.Drawing.Point(5, 6);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(130, 100);
@@ -311,6 +312,7 @@
             this.cmb_PenSize.Size = new System.Drawing.Size(122, 21);
             this.cmb_PenSize.TabIndex = 1;
             this.cmb_PenSize.Text = "1";
+
             // 
             // menuStrip1
             // 
@@ -411,6 +413,7 @@
         private System.Windows.Forms.Panel pnl_Draw;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.ComboBox cmb_PenSize;
+        private System.Windows.Forms.ComboBox cmb_ammount;
         private System.Windows.Forms.Button btn_PenColor;
         private System.Windows.Forms.ToolStripMenuItem newToolStripMenuItem;
         private System.Windows.Forms.Panel panel4;
@@ -429,6 +432,7 @@
         private System.Windows.Forms.Button btn_Circle;
         private System.Windows.Forms.Button btn_Rectangle;
         private System.Windows.Forms.Button btn_Square;
+        private System.Windows.Forms.Button btn_polygon;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;

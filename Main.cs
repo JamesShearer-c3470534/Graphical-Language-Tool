@@ -4,8 +4,19 @@ using System.Windows.Forms;
 using System.IO;
 using ICSharpCode.TextEditor.Document;
 using GraphicalLanguageTool;
-using GraphicalLanguageTool;
 using TestCommandLine;
+using ProFactoryPattern;
+using ExecuteCommand;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+
+using System.Diagnostics;
 
 namespace GraphicalLanguageTool
 {
@@ -42,7 +53,7 @@ namespace GraphicalLanguageTool
             SUBMIT.Enabled = false;   //'Submit' menu item set to disabled by default, enabled later under conditions.
            
         }
-
+        
         /// <summary>
         ///  Connects to the database (<see cref="mainConnection"/>) and selects, then reads SQL data (<see cref="SqlDataReader"/>) that populates the fields in the <see cref="Main"/> form.
         /// </summary>
@@ -251,7 +262,7 @@ namespace GraphicalLanguageTool
         {
             if (CheckInput())
             {
-                String commandString = "INSERT INTO VersionTable(EntryDateTime, AlteredCode, Username, BugId, EntryNo) VALUES (@EntryDateTime, @AlteredCode, @Username, @BugId, @EntryNo)";
+     
                
                 Populate();
             }
@@ -377,7 +388,7 @@ namespace GraphicalLanguageTool
 
         private void Button1_Click_1(object sender, EventArgs e)
         {
-        Form2 paint = new Form2();
+        Form22 paint = new Form22();
                     paint.Show(); // or somename.ShowDialog(); if you want the new form to have priority until it is closed
         }
 
@@ -396,10 +407,39 @@ namespace GraphicalLanguageTool
 
         Panel aspPanel = new Panel();
         Button aspbutton = new Button();
-        
 
-        
-     
+        private void USERNAMETXT_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            Form22 drawing = new Form22();
+            drawing.Show(); // or somename.ShowDialog(); if you want the new form to have priority until it is closed
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form22 pen = new Form22();
+            pen.Show(); // or somename.ShowDialog(); if you want the new form to have priority until it is closed
+        }
+
+        private void toolStripMenuItem12_Click(object sender, EventArgs e)
+        {
+            frmFactoryTest factoryclass = new frmFactoryTest();
+            factoryclass.Show(); // or somename.ShowDialog(); if you want the new form to have priority until it is closed
+        }
+
+
+
+        private void toolStripMenuItem13_Click(object sender, EventArgs e)
+        {
+            Process j = new Process();
+            j.StartInfo.FileName = "EXC.exe";
+            j.Start();
+        }
+       
     }
 
 }

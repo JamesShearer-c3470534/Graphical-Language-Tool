@@ -5,9 +5,9 @@ using System.Windows.Forms;
 
 namespace GraphicalLanguageTool
 {
-    public partial class Form2 : Form
+    public partial class Form22 : Form
     {
-        public Form2()
+        public Form22()
         {
             InitializeComponent();
             g = pnl_Draw.CreateGraphics();
@@ -20,6 +20,7 @@ namespace GraphicalLanguageTool
         bool drawSquare = false;
         bool drawRectangle = false;
         bool drawCircle = false;
+        bool drawpolygon = false;
         //Event fired when the mouse pointer is moved over the Panel(pnl_Draw).
         private void pnl_Draw_MouseMove(object sender, MouseEventArgs e)
         {
@@ -47,6 +48,8 @@ namespace GraphicalLanguageTool
                 //setting startPaint and drawSquare value to false for creating one graphic on one click.
                 startPaint = false;
                 drawSquare = false;
+
+            
             }
             if(drawRectangle)
             {
@@ -62,6 +65,13 @@ namespace GraphicalLanguageTool
                 g.FillEllipse(sb, e.X, e.Y, int.Parse(txt_ShapeSize.Text), int.Parse(txt_ShapeSize.Text));
                 startPaint = false;
                 drawCircle = false;
+            }
+            if (drawpolygon)
+            {
+                SolidBrush sb = new SolidBrush(btn_PenColor.BackColor);
+                g.FillEllipse(sb, e.X, e.Y, int.Parse(txt_ShapeSize.Text), int.Parse(txt_ShapeSize.Text));
+                startPaint = false;
+                drawpolygon = false;
             }
         }
         //Fired when the mouse pointer is over the pnl_Draw and a mouse button is released.
@@ -114,6 +124,10 @@ namespace GraphicalLanguageTool
         private void btn_Circle_Click(object sender, EventArgs e)
         {
             drawCircle = true;
+        }
+        private void btn_polygon_Click(object sender, EventArgs e)
+        {
+            drawpolygon = true;
         }
         //Exit under File Menu
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)

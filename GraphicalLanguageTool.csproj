@@ -8,7 +8,7 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>GraphicalLanguageTool</RootNamespace>
     <AssemblyName>GraphicalLanguageTool</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <IsWebBootstrapper>false</IsWebBootstrapper>
@@ -26,6 +26,7 @@
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -77,6 +78,22 @@
     </Compile>
     <Compile Include="About.Designer.cs" />
     <Compile Include="CommandLine.cs" />
+    <Compile Include="drawing\CollageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="drawing\CollageForm.Designer.cs" />
+    <Compile Include="drawing\CreateCollageLayoutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="drawing\CreateCollageLayoutForm.Designer.cs" />
+    <Compile Include="drawing\Form22.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="drawing\Form22.Designer.cs" />
+    <Compile Include="drawing\Program.cs" />
+    <Compile Include="drawing\Resources.Designer.cs" />
+    <Compile Include="drawing\Settings.Designer.cs" />
+    <Compile Include="ExecuteCmd.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +104,16 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form2.Designer.cs" />
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFactoryTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFactoryTest.Designer.cs" />
     <Compile Include="OpenBug.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,13 +139,22 @@
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
+    <Compile Include="Program2.cs" />
     <Compile Include="Properties.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="About.resx" />
+    <EmbeddedResource Include="drawing\CollageForm.resx" />
+    <EmbeddedResource Include="drawing\CreateCollageLayoutForm.resx" />
+    <EmbeddedResource Include="drawing\Form22.resx" />
+    <EmbeddedResource Include="drawing\Resources.resx" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form2.resx" />
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFactoryTest.resx" />
     <EmbeddedResource Include="NewBugForm.resx">
       <DependentUpon>NewBugForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -148,6 +184,7 @@
     <None Include="bin\Debug\JavaScript-Mode.xshd" />
     <None Include="bin\Debug\PHP-Mode.xshd" />
     <None Include="bin\Debug\XML-Mode.xshd" />
+    <None Include="drawing\Settings.settings" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -197,10 +234,11 @@
   <ItemGroup>
     <Content Include="bugicon_MBz_icon.ico" />
     <Content Include="c#logo.ico" />
+    <Content Include="DrawingTool.sln" />
+    <Content Include="ExecuteCommand.csproj" />
+    <Content Include="ExecuteCommand.sln" />
     <Content Include="Resources\pencil.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="commandline\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
