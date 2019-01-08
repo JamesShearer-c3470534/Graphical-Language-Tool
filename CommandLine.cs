@@ -1,4 +1,8 @@
 ﻿
+<<<<<<< HEAD
+=======
+
+>>>>>>> bfa5cdce0a097982385df5656acf262ba42916a7
 using System;
 using System.Collections.Generic;
 
