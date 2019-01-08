@@ -11,7 +11,6 @@ C:\Users\james\Downloads\ASEA2-master\BugTracker\obj\Debug\GraphicalLanguageTool
 C:\Users\james\Downloads\ASEA2-master\BugTracker\obj\Debug\GraphicalLanguageTool.csproj.CopyComplete
 C:\Users\james\Downloads\ASEA2-master\BugTracker\obj\Debug\GraphicalLanguageTool.exe
 C:\Users\james\Downloads\ASEA2-master\BugTracker\obj\Debug\GraphicalLanguageTool.pdb
-<<<<<<< HEAD
 C:\Users\aali\Downloads\GitHub\Graphical-Language-Tool\bin\Debug\GraphicalLanguageTool.exe.config
 C:\Users\aali\Downloads\GitHub\Graphical-Language-Tool\bin\Debug\GraphicalLanguageTool.exe
 C:\Users\aali\Downloads\GitHub\Graphical-Language-Tool\bin\Debug\GraphicalLanguageTool.pdb
@@ -35,38 +34,3 @@ C:\Users\aali\Downloads\GitHub\Graphical-Language-Tool\obj\Debug\GraphicalLangua
 C:\Users\aali\Downloads\GitHub\Graphical-Language-Tool\obj\Debug\GraphicalLanguageTool.Form3.resources
 C:\Users\aali\Downloads\GitHub\Graphical-Language-Tool\obj\Debug\GraphicalLanguageTool.drawing.Form22.resources
 C:\Users\aali\Downloads\GitHub\Graphical-Language-Tool\obj\Debug\GraphicalLanguageTool.frmFactoryTest.resources
-=======
-C:\Users\james\Documents\GitHub\Graphical-Language-Tool\bin\Debug\GraphicalLanguageTool.exe.config
-C:\Users\james\Documents\GitHub\Graphical-Language-Tool\bin\Debug\GraphicalLanguageTool.exe
-C:\Users\james\Documents\GitHub\Graphical-Language-Tool\bin\Debug\GraphicalLanguageTool.pdb
-C:\Users\james\Documents\GitHub\Graphical-Language-Tool\obj\Debug\GraphicalLanguageTool.csprojAssemblyReference.cache
-C:\Users\james\Documents\GitHub\Graphical-Language-Tool\obj\Debug\GraphicalLanguageTool.NewBugForm.resources
-C:\Users\james\Documents\GitHub\Graphical-Language-Tool\obj\Debug\GraphicalLanguageTool.Login.resources
-C:\Users\james\Documents\GitHub\Graphical-Language-Tool\obj\Debug\GraphicalLanguageTool.Main.resources
-C:\Users\james\Documents\GitHub\Graphical-Language-Tool\obj\Debug\GraphicalLanguageTool.OpenBug.resources
-C:\Users\james\Documents\GitHub\Graphical-Language-Tool\obj\Debug\GraphicalLanguageTool.Properties.Resources.resources
-C:\Users\james\Documents\GitHub\Graphical-Language-Tool\obj\Debug\GraphicalLanguageTool.csproj.GenerateResource.cache
-C:\Users\james\Documents\GitHub\Graphical-Language-Tool\obj\Debug\GraphicalLanguageTool.csproj.CoreCompileInputs.cache
-C:\Users\james\Documents\GitHub\Graphical-Language-Tool\obj\Debug\GraphicalLanguageTool.csproj.CopyComplete
-C:\Users\james\Documents\GitHub\Graphical-Language-Tool\obj\Debug\GraphicalLanguageTool.exe
-C:\Users\james\Documents\GitHub\Graphical-Language-Tool\obj\Debug\GraphicalLanguageTool.pdb
-C:\Users\james\Documents\GitHub\Graphical-Language-Tool\obj\Debug\GraphicalLanguageTool.About.resources
-C:\Users\james\Documents\GitHub\Graphical-Language-Tool\obj\Debug\GraphicalLanguageTool.Form1.resources
-C:\Users\Tony\Documents\GitHub\Graphical-Language-Tool\bin\Debug\GraphicalLanguageTool.exe.config
-C:\Users\Tony\Documents\GitHub\Graphical-Language-Tool\bin\Debug\GraphicalLanguageTool.exe
-C:\Users\Tony\Documents\GitHub\Graphical-Language-Tool\bin\Debug\GraphicalLanguageTool.pdb
-C:\Users\Tony\Documents\GitHub\Graphical-Language-Tool\obj\Debug\GraphicalLanguageTool.csprojAssemblyReference.cache
-C:\Users\Tony\Documents\GitHub\Graphical-Language-Tool\obj\Debug\GraphicalLanguageTool.About.resources
-C:\Users\Tony\Documents\GitHub\Graphical-Language-Tool\obj\Debug\GraphicalLanguageTool.Form1.resources
-C:\Users\Tony\Documents\GitHub\Graphical-Language-Tool\obj\Debug\GraphicalLanguageTool.NewBugForm.resources
-C:\Users\Tony\Documents\GitHub\Graphical-Language-Tool\obj\Debug\GraphicalLanguageTool.Login.resources
-C:\Users\Tony\Documents\GitHub\Graphical-Language-Tool\obj\Debug\GraphicalLanguageTool.Main.resources
-C:\Users\Tony\Documents\GitHub\Graphical-Language-Tool\obj\Debug\GraphicalLanguageTool.OpenBug.resources
-C:\Users\Tony\Documents\GitHub\Graphical-Language-Tool\obj\Debug\GraphicalLanguageTool.Properties.Resources.resources
-C:\Users\Tony\Documents\GitHub\Graphical-Language-Tool\obj\Debug\GraphicalLanguageTool.csproj.GenerateResource.cache
-C:\Users\Tony\Documents\GitHub\Graphical-Language-Tool\obj\Debug\GraphicalLanguageTool.csproj.CoreCompileInputs.cache
-C:\Users\Tony\Documents\GitHub\Graphical-Language-Tool\obj\Debug\GraphicalLanguageTool.csproj.CopyComplete
-C:\Users\Tony\Documents\GitHub\Graphical-Language-Tool\obj\Debug\GraphicalLanguageTool.exe
-C:\Users\Tony\Documents\GitHub\Graphical-Language-Tool\obj\Debug\GraphicalLanguageTool.pdb
-C:\Users\Tony\Documents\GitHub\Graphical-Language-Tool\obj\Debug\GraphicalLanguageTool.Form3.resources
->>>>>>> bfa5cdce0a097982385df5656acf262ba42916a7
